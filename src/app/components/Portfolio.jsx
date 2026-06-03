@@ -1,11 +1,11 @@
 import { Cormorant_Garamond, DM_Sans, Playfair_Display } from 'next/font/google';
 import React from 'react'
-import p2 from '../../../public/images/p2.png'
-import p3 from '../../../public/images/p3.png'
 import preview from '../../../public/images/preview.png'
+import preview2 from '../../../public/images/preview2.png'
 import Image from 'next/image';
 import { FaGithub } from "react-icons/fa";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
+import Link from 'next/link';
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -35,38 +35,97 @@ const Portfolio = () => {
                     <p className={`${cormorant.className} text-[20px] font-medium leading-[160%] text-[#9A9A9A]`}>Selected projects from recent years</p>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4.25 pt-17.5">
-                    <div className="1">
-                        <Image src={preview} alt='logo' className='w-47.5 h-37.5 rounded-t-lg'/>
-                        <div className="bg-[rgba(255,255,255,0.08)] rounded-b-lg">
-                            <div className="1 flex justify-between px-4">
-                                <h4 className='text-[16px] font-bold font-inter leading-[160%] text-[#C6C6C6]'>Full E-Commerce Website</h4>
-                                <p className='text-[16px] font-bold font-inter leading-[160%] text-[#959595]'>Categories</p>
-                            </div>
-                            <div className="flex gap-5 px-4 py-3">
-                                
-                                <h4 className='text-[16px] font-bold font-inter leading-[160%] text-[#C6C6C6]'>React</h4>
-                                <h4 className='text-[16px] font-bold font-inter leading-[160%] text-[#C6C6C6]'>Tailwind</h4>
-                                <h4 className='text-[16px] font-bold font-inter leading-[160%] text-[#C6C6C6]'>Redux</h4>
-                            </div>
-                            <div className="flex gap-5 px-4 pb-3">
-                                <h3 className='text-[20px] font-bold font-inter leading-[160%] text-[#FFFFFF] flex items-center gap-2'><LuSquareArrowOutUpRight className=''/> Live Demo</h3>
-                                <h3 className='text-[20px] font-bold font-inter leading-[160%] text-[#FFFFFF] flex items-center gap-2'><FaGithub /> GitHub</h3>
-                            </div>
+                <div className="grid grid-cols-3 gap-5 pt-17.5">
+                    <div className="group group-hover:shadow-lg group-hover:shadow-orange-300 border border-[#ffffff28] rounded-xl shadow-md">
+                        <div className="img overflow-hidden rounded-t-xl relative">
+                            <Image src={preview} alt='preview' className='w-106.25 h-87.5' style={{borderRadius: '12px 12px 0 0'}}></Image>
+
+                            <div className="btn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-99 opacity-0 group-hover:opacity-100 duration-500">
+                                <div className="flex gap-5 pt-2.5 border-t border-[#ffffff28] pb-2.5 ">
+                                  <a href="" className='text-[#000000] bg-[#d8b553] border border-[#c9a84c66] py-2 px-3 rounded-[10px] duration-500 flex items-center gap-2 whitespace-nowrap'><LuSquareArrowOutUpRight/> Live Demo</a>
+                                  <a href="" className='text-[#e8e8f0] border border-[#ffffff3a] py-2 px-3 rounded-[10px] bg-[#212148dc] flex items-center gap-2'><FaGithub/> GitHub</a>
+                                </div>
+                              </div>
+
+                            <div className="black absolute group-hover:bg-[rgba(0,0,0,0.5)] h-87.5 w-106.25 top-0 left-0 duration-300"></div>
+                        </div>
+                        <div className="valus group bg-[#151529aa] px-3">
+                          <h3 className={`text-[#FFFFFF] text-[24px] ${playfair.className} font-bold pt-2`}>Exclusive — Full E-Commerce</h3>
+                          <p className={`text-[#8888aa] text-[16px] ${cormorant.className} font-medium pb-3.5`}>A feature-complete shopping platform with flash sales, category browsing, cart management, and a polished checkout experience built with modern React architecture.</p>
+                          <div className="teq pb-2.5">
+                            <ul className='flex gap-5'>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#8888aa] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>React</a></li>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#8888aa] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>Tailwind CSS</a></li>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#8888aa] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>Redux</a></li>
+                              
+                            </ul>
+                          </div>
+                          <div className="flex gap-5 pt-2.5 border-t border-[#ffffff28] pb-2.5">
+                            <a href="" className='text-[#c9a84c] border border-[#c9a84c66] py-2 px-3 rounded-[10px] bg-[#c9a84c22] duration-300 flex items-center gap-2'><LuSquareArrowOutUpRight/> Live Demo</a>
+                            <a href="" className='text-[#e8e8f0] border border-[#ffffff3a] py-2 px-3 rounded-[10px] bg-transparent duration-300 hover:bg-[#212148dc] flex items-center gap-2'><FaGithub/> GitHub</a>
+                          </div>
                         </div>
                     </div>
-                    <div className="1">
-                        <Image src={p3} alt='logo' className='w-full'/>
-                        <div className="1 flex justify-between bg-[rgba(255,255,255,0.08)] p-4">
-                            <h4 className='text-[16px] font-bold font-inter leading-[160%] text-[#C6C6C6]'>Name Project</h4>
-                            <p className='text-[16px] font-bold font-inter leading-[160%] text-[#959595]'>Categories</p>
+
+                    <div className="group group-hover:shadow-lg group-hover:shadow-orange-300 border border-[#ffffff28] rounded-xl shadow-md">
+                        <div className="img overflow-hidden rounded-t-xl relative">
+                            <Image src={preview2} alt='preview' className='w-106.25 h-87.5' style={{borderRadius: '12px 12px 0 0'}}></Image>
+
+                            <div className="btn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-99 opacity-0 group-hover:opacity-100 duration-500">
+                                <div className="flex gap-5 pt-2.5 border-t border-[#ffffff28] pb-2.5 ">
+                                  <a href="" className='text-[#000000] bg-[#d8b553] border border-[#c9a84c66] py-2 px-3 rounded-[10px] duration-500 flex items-center gap-2 whitespace-nowrap'><LuSquareArrowOutUpRight/> Live Demo</a>
+                                  <a href="" className='text-[#e8e8f0] border border-[#ffffff3a] py-2 px-3 rounded-[10px] bg-[#212148dc] flex items-center gap-2'><FaGithub/> GitHub</a>
+                                </div>
+                              </div>
+
+                            <div className="black absolute group-hover:bg-[rgba(0,0,0,0.5)] h-87.5 w-106.25 top-0 left-0 duration-300"></div>
+                        </div>
+                        <div className="valus group bg-[#151529aa] px-3">
+                          <h3 className={`text-[#FFFFFF] text-[24px] ${playfair.className} font-bold pt-2`}>Exclusive — Full E-Commerce</h3>
+                          <p className={`text-[#8888aa] text-[16px] ${cormorant.className} font-medium pb-3.5`}>A feature-complete shopping platform with flash sales, category browsing, cart management, and a polished checkout experience built with modern React architecture.</p>
+                          <div className="teq pb-2.5">
+                            <ul className='flex gap-5'>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#8888aa] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>React</a></li>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#8888aa] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>Tailwind CSS</a></li>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#8888aa] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>Redux</a></li>
+                              
+                            </ul>
+                          </div>
+                          <div className="flex gap-5 pt-2.5 border-t border-[#ffffff28] pb-2.5">
+                            <a href="" className='text-[#c9a84c] border border-[#c9a84c66] py-2 px-3 rounded-[10px] bg-[#c9a84c22] duration-300 flex items-center gap-2'><LuSquareArrowOutUpRight/> Live Demo</a>
+                            <a href="" className='text-[#e8e8f0] border border-[#ffffff3a] py-2 px-3 rounded-[10px] bg-transparent duration-300 hover:bg-[#212148dc] flex items-center gap-2'><FaGithub/> GitHub</a>
+                          </div>
                         </div>
                     </div>
-                    <div className="1">
-                        <Image src={p2} alt='logo' className='w-full'/>
-                        <div className="1 flex justify-between bg-[rgba(255,255,255,0.08)] p-4">
-                            <h4 className='text-[16px] font-bold font-inter leading-[160%] text-[#C6C6C6]'>Name Project</h4>
-                            <p className='text-[16px] font-bold font-inter leading-[160%] text-[#959595]'>Categories</p>
+
+                    <div className="group group-hover:shadow-lg group-hover:shadow-orange-300 border border-[#ffffff28] rounded-xl shadow-md">
+                        <div className="img overflow-hidden rounded-t-xl relative">
+                            <Image src={preview} alt='preview' className='w-106.25 h-87.5' style={{borderRadius: '12px 12px 0 0'}}></Image>
+
+                            <div className="btn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-99 opacity-0 group-hover:opacity-100 duration-500">
+                                <div className="flex gap-5 pt-2.5 border-t border-[#ffffff28] pb-2.5 ">
+                                  <a href="" className='text-[#000000] bg-[#d8b553] border border-[#c9a84c66] py-2 px-3 rounded-[10px] duration-500 flex items-center gap-2 whitespace-nowrap'><LuSquareArrowOutUpRight/> Live Demo</a>
+                                  <a href="" className='text-[#e8e8f0] border border-[#ffffff3a] py-2 px-3 rounded-[10px] bg-[#212148dc] flex items-center gap-2'><FaGithub/> GitHub</a>
+                                </div>
+                              </div>
+
+                            <div className="black absolute group-hover:bg-[rgba(0,0,0,0.5)] h-87.5 w-106.25 top-0 left-0 duration-300"></div>
+                        </div>
+                        <div className="valus group bg-[#151529aa] px-3">
+                          <h3 className={`text-[#FFFFFF] text-[24px] ${playfair.className} font-bold pt-2`}>Exclusive — Full E-Commerce</h3>
+                          <p className={`text-[#8888aa] text-[16px] ${cormorant.className} font-medium pb-3.5`}>A feature-complete shopping platform with flash sales, category browsing, cart management, and a polished checkout experience built with modern React architecture.</p>
+                          <div className="teq pb-2.5">
+                            <ul className='flex gap-5'>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#8888aa] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>React</a></li>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#8888aa] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>Tailwind CSS</a></li>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#8888aa] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>Redux</a></li>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#8888aa] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>REST API</a></li>
+                            </ul>
+                          </div>
+                          <div className="flex gap-5 pt-2.5 border-t border-[#ffffff28] pb-2.5">
+                            <a href="" className='text-[#c9a84c] border border-[#c9a84c66] py-2 px-3 rounded-[10px] bg-[#c9a84c22] duration-300 flex items-center gap-2'><LuSquareArrowOutUpRight/> Live Demo</a>
+                            <a href="" className='text-[#e8e8f0] border border-[#ffffff3a] py-2 px-3 rounded-[10px] bg-transparent duration-300 hover:bg-[#212148dc] flex items-center gap-2'><FaGithub/> GitHub</a>
+                          </div>
                         </div>
                     </div>
                 </div>

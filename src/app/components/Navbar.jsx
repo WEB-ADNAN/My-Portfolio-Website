@@ -13,7 +13,7 @@ const inter = Inter({
 const Navbar = () => {
   return (
     <>
-        <section className='bg-[#080b11] border-b border-[rgba(212,175,55,0.5)]'>
+        <section className='bg-[#080b11] border-b border-[rgba(212,175,55,0.5)] '>
             <div className="container">
                 <div className="flex items-center justify-between">
                     <div className="1 ">
@@ -29,9 +29,9 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    {/* <div className="button py-7.5">
+                    <div className="button py-7.5">
                         <a className={`${playfair.className} text-[16px] text-[#FFFFFF] font-bold py-3 px-10 border-2 border-[#2A3A5C] rounded-lg hover:bg-[#D4AF37] hover:border-[#D4AF37] duration-500`} href="">Hire Me</a>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </section>

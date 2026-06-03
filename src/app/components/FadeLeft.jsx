@@ -7,7 +7,7 @@ const FadeLeft = ({ children }) => {
     <motion.div
       initial={{ opacity: 0, x: -60 }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       transition={{
         duration: 0.7,
         ease: "easeOut",

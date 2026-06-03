@@ -54,25 +54,25 @@ const Contact = () => {
                         <div className="flex items-center gap-5 w-100 border-b border-[rgba(212,175,55,0.2)]">
                             <div className="dot w-2.5 h-2.5 bg-[#D4AF37] rounded-full"></div>
                             <div className="text">
-                                <p className={`${cormorant.className} text-[24px] font-medium leading-[160%] text-[#9A9A9A] pb-3`}>Sylhet, Bangladesh</p>
+                                <p className={`${cormorant.className} text-[24px] font-medium leading-[160%] text-[#9A9A9A] pb-3`}>Bangladesh</p>
                             </div>
                         </div>
 
                         <h4 className={`${cormorant.className} text-[24px] font-medium leading-[160%] text-[rgba(212,175,55,0.5)] pt-7`}>Follow me</h4>
 
                         <div className="icon flex gap-6 text-[40px] pt-5">
-                            <Link href="https://www.linkedin.com/in/adnan-sami-836161405/">
+                            <Link href="https://www.linkedin.com/in/adnan-sami-836161405/" target="_blank">
                             <FaLinkedin className='text-[rgba(212,175,55,0.5)] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg'/></Link>
 
-                            <Link href="https://www.instagram.com/_adnan.sami/">
+                            <Link href="https://www.instagram.com/_adnan.sami/" target="_blank">
                             <FaInstagram className='text-[rgba(212,175,55,0.5)] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg'/>
                             </Link>
 
-                            <Link href="https://web.facebook.com/md.adnan.sami.204706">
+                            <Link href="https://web.facebook.com/md.adnan.sami.204706" target='_blank'>
                             <FaFacebook className='text-[rgba(212,175,55,0.5)] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg'/>
                             </Link>
 
-                            <Link href="https://web.whatsapp.com/">
+                            <Link href="https://web.whatsapp.com/" target='_blank'>
                             <FaSquareWhatsapp className='text-[rgba(212,175,55,0.5)] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg'/>
                             </Link>
                             

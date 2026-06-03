@@ -40,7 +40,7 @@ const Service = () => {
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 >
                 <div className="h-full hover:bg-[#0f1420] duration-200 py-8.5 px-7.5 border border-[rgba(212,175,55,0.5)] rounded-[14px] shadow-md shadow-amber-400">
                     <IoServerSharp className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
@@ -53,7 +53,7 @@ const Service = () => {
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 >
                 <div className="h-full hover:bg-[#0f1420] duration-200 py-8.5 px-7.5 border border-[rgba(212,175,55,0.5)] rounded-[14px] shadow-md shadow-amber-400">
                     <IoServerSharp className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
@@ -66,7 +66,7 @@ const Service = () => {
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 >
                 <div className="h-full hover:bg-[#0f1420] duration-200 py-8.5 px-7.5 border border-[rgba(212,175,55,0.5)] rounded-[14px] shadow-md shadow-amber-400">
                     <IoServerSharp className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
@@ -82,7 +82,7 @@ const Service = () => {
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 >
                 <div className="h-full hover:bg-[#0f1420] duration-200 py-8.5 px-7.5 border border-[rgba(212,175,55,0.5)] rounded-[14px] shadow-md shadow-amber-400">
                     <IoServerSharp className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
@@ -95,7 +95,7 @@ const Service = () => {
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 >
                 <div className="1 h-full hover:bg-[#0f1420] duration-200 py-8.5 px-7.5 border border-[rgba(212,175,55,0.5)] rounded-[14px] shadow-md shadow-amber-400">
                     <IoServerSharp className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
@@ -108,7 +108,7 @@ const Service = () => {
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 >
                 <div className="h-full hover:bg-[#0f1420] duration-200 py-8.5 px-7.5 border border-[rgba(212,175,55,0.5)] rounded-[14px] shadow-md shadow-amber-400">
                     <IoServerSharp className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
