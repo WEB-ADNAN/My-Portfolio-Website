@@ -23,11 +23,11 @@ const playfair = Playfair_Display({
 });
 
 const skills = [
-  { name: "Figma / XD", percent: 95 },
-  { name: "UI Design",  percent: 92 },
-  { name: "Branding",   percent: 88 },
-  { name: "Figma",   percent: 98 },
-  { name: "Responsiv",   percent: 92 },
+  { name: "Frontend Development", percent: 97 },
+  { name: "Backend Development",  percent: 95 },
+  { name: "Database Management",   percent: 95 },
+  { name: "UI/UX & Figma",   percent: 98 },
+  { name: "Responsive & Source Control",   percent: 96 },
 ];
 
 const About = () => {
@@ -38,7 +38,7 @@ const About = () => {
                 <div className="headline flex flex-col justify-center items-center">
                     <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>Who I Am</h4>
                     <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3`}>About <span className='text-[#D4AF37] italic'>Me</span></h3>
-                    <p className={`${cormorant.className} text-[20px] font-medium leading-[160%] text-[#9A9A9A]`}>A passionate designer with an eye for detail</p>
+                    <p className={`${cormorant.className} text-[20px] font-medium leading-[160%] text-[#9A9A9A]`}>Building complete web experiences, from interface to infrastructure.</p>
                 </div>
 
                 <div className="flex pt-15 items-center">
@@ -60,8 +60,8 @@ const About = () => {
                     <div className="w-[60%]">
                         <FadeRight>
                         <div className="text">
-                            <p className={`${cormorant.className} text-[20px] font-medium leading-[160%] text-[#9A9A9A]`}>I am a UI/UX designer with over 5 years of experience crafting premium digital products. My approach combines strategic thinking with refined aesthetics. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto?</p>
-                            <p className={`${cormorant.className} text-[20px] font-medium leading-[160%] text-[#9A9A9A] pt-5`}>Every pixel has purpose, every interaction tells a story. My work spans mobile apps, web platforms, and brand identities for clients across the globe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, est?</p>
+                            <p className={`${cormorant.className} text-[20px] font-medium leading-[160%] text-[#9A9A9A]`}>I'm a passionate MERN Stack Developer who loves turning ideas into real, functional web applications. Though early in my professional journey, I've spent over a year building projects, sharpening my skills, and learning what it truly takes to craft seamless digital experiences.</p>
+                            <p className={`${cormorant.className} text-[20px] font-medium leading-[160%] text-[#9A9A9A] pt-5`}>My work spans the full stack — crafting responsive, pixel-perfect interfaces with React and Next.js on the frontend, and architecting reliable, scalable backends with Node.js, Express, and MongoDB. Every project I build reflects a commitment to clean code, thoughtful structure, and real-world performance.</p>
                         </div>
 
                         {skills.map((skill, i) => (
@@ -81,12 +81,12 @@ const About = () => {
                                 <div className="relative h-px bg-white/8">
                                 {/* Fill */}
                                 <div
-                                    className="absolute top-0 left-0 h-px bg-gradient-to-r from-[#D4AF37] to-[#f0d080]"
+                                    className="absolute top-0 left-0 h-px bg-linear-to-r from-[#D4AF37] to-[#f0d080]"
                                     style={{ width: `${skill.percent}%` }}
                                 />
                                 {/* Dot at end */}
                                 <div
-                                    className="absolute -top-[3px] w-[7px] h-[7px] rounded-full bg-[#D4AF37] shadow-[0_0_6px_rgba(212,175,55,0.6)]"
+                                    className="absolute -top-0.75 w-1.75 h-1.75 rounded-full bg-[#D4AF37] shadow-[0_0_6px_rgba(212,175,55,0.6)]"
                                     style={{ left: `${skill.percent}%`, transform: 'translateX(-50%)' }}
                                 />
                                 </div>

@@ -44,8 +44,8 @@ const FAQ = () => {
                             </div>
                           <div ><IoIosArrowDown className={`text-[#b8962e] text-[30px] transition-transform duration-300 ${show === 1 ? 'rotate-180' : '' }`}/></div>
                         </div>
-                        <div className={`pl-10 pr-20 transition-all duration-300 ${show === 1 ? 'max-h-14 pt-2.5' : 'max-h-1.5 overflow-hidden'}`}>
-                          <p className={`${cormorant.className} font-medium select-none text-[#9A9A9A] text-[19px]`}>I specialize in web design and front-end development — building responsive, modern websites and portfolios. I also offer UI/UX design, landing page design, and custom web solutions tailored to your needs.</p>
+                        <div className={`pl-10 pr-20 transition-all duration-300 ${show === 1 ? 'max-h-19 pt-2.5' : 'max-h-1.5 overflow-hidden'}`}>
+                          <p className={`${cormorant.className} font-medium select-none text-[#9A9A9A] text-[19px]`}>I specialize in full-stack web applications — from responsive frontends with React and Next.js to scalable backends with Node.js, Express, and MongoDB. I work on portfolios, business websites, dashboards, and custom web solutions.</p>
                         </div>
                     </div>
 
@@ -53,12 +53,12 @@ const FAQ = () => {
                         <div className="flex justify-between items-center cursor-pointer" onClick={() => setShow(show === 2 ? null : 2)}>
                             <div className='flex gap-5'>
                                 <h6 className="1 text-[#b8962e] text-[20px] font-bold">02</h6>
-                                <p className="2 text-[rgba(255,255,255,0.9)] text-[20px] select-none font-bold">What kind of projects do you work on?</p>
+                                <p className="2 text-[rgba(255,255,255,0.9)] text-[20px] select-none font-bold">Are you open to freelance or remote work?</p>
                             </div>
                           <div ><IoIosArrowDown className={`text-[#b8962e] text-[30px] transition-transform duration-300 ${show === 2 ? 'rotate-180' : '' }`}/></div>
                         </div>
-                        <div className={`pl-10 pr-20 transition-all duration-300 ${show === 2 ? 'max-h-14 pt-2.5' : 'max-h-1.5 overflow-hidden'}`}>
-                          <p className={`${cormorant.className} font-medium select-none text-[#9A9A9A] text-[19px]`}>I specialize in web design and front-end development — building responsive, modern websites and portfolios. I also offer UI/UX design, landing page design, and custom web solutions tailored to your needs.</p>
+                        <div className={`pl-10 pr-20 transition-all duration-300 ${show === 2 ? 'max-h-19 pt-2.5' : 'max-h-1.5 overflow-hidden'}`}>
+                          <p className={`${cormorant.className} font-medium select-none text-[#9A9A9A] text-[19px]`}>Absolutely. I'm available for freelance projects, remote positions, and on-site opportunities. Whether you need a one-time delivery or a long-term collaboration — I'm ready to bring value from day one.</p>
                         </div>
                     </div>
 
@@ -66,12 +66,12 @@ const FAQ = () => {
                         <div className="flex justify-between items-center cursor-pointer" onClick={() => setShow(show === 3 ? null : 3)}>
                             <div className='flex gap-5'>
                                 <h6 className="1 text-[#b8962e] text-[20px] font-bold">03</h6>
-                                <p className="2 text-[rgba(255,255,255,0.9)] text-[20px] select-none font-bold">What kind of projects do you work on?</p>
+                                <p className="2 text-[rgba(255,255,255,0.9)] text-[20px] select-none font-bold">Do you work solo or with a team?</p>
                             </div>
                           <div ><IoIosArrowDown className={`text-[#b8962e] text-[30px] transition-transform duration-300 ${show === 3 ? 'rotate-180' : '' }`}/></div>
                         </div>
-                        <div className={`pl-10 pr-20 transition-all duration-300 ${show === 3 ? 'max-h-14 pt-2.5' : 'max-h-1.5 overflow-hidden'}`}>
-                          <p className={`${cormorant.className} font-medium select-none text-[#9A9A9A] text-[19px]`}>It depends on the scope. A simple landing page usually takes 3–5 days, while a full portfolio or multi-page website can take 1–3 weeks. I'll give you a clear timeline after we discuss your project.</p>
+                        <div className={`pl-10 pr-20 transition-all duration-300 ${show === 3 ? 'max-h-19 pt-2.5' : 'max-h-1.5 overflow-hidden'}`}>
+                          <p className={`${cormorant.className} font-medium select-none text-[#9A9A9A] text-[19px]`}>I primarily work solo — giving you direct communication, fast decisions, and full accountability. But when a project demands more, I have a trusted backup team ready to scale up without compromising quality or deadlines.</p>
                         </div>
                     </div>
 
@@ -79,12 +79,12 @@ const FAQ = () => {
                         <div className="flex justify-between items-center cursor-pointer" onClick={() => setShow(show === 4 ? null : 4)}>
                             <div className='flex gap-5'>
                                 <h6 className="1 text-[#b8962e] text-[20px] font-bold">04</h6>
-                                <p className="2 text-[rgba(255,255,255,0.9)] text-[20px] select-none font-bold">What kind of projects do you work on?</p>
+                                <p className="2 text-[rgba(255,255,255,0.9)] text-[20px] select-none font-bold">How long does it take to complete a project?</p>
                             </div>
                           <div ><IoIosArrowDown className={`text-[#b8962e] text-[30px] transition-transform duration-300 ${show === 4 ? 'rotate-180' : '' }`}/></div>
                         </div>
-                        <div className={`pl-10 pr-20 transition-all duration-300 ${show === 4 ? 'max-h-14 pt-2.5' : 'max-h-1.5 overflow-hidden'}`}>
-                          <p className={`${cormorant.className} font-medium select-none text-[#9A9A9A] text-[19px]`}>I specialize in web design and front-end development — building responsive, modern websites and portfolios. I also offer UI/UX design, landing page design, and custom web solutions tailored to your needs.</p>
+                        <div className={`pl-10 pr-20 transition-all duration-300 ${show === 4 ? 'max-h-19 pt-2.5' : 'max-h-1.5 overflow-hidden'}`}>
+                          <p className={`${cormorant.className} font-medium select-none text-[#9A9A9A] text-[19px]`}>A clean landing page? 3–5 days. A full-stack web application with authentication, database, and API? 2–4 weeks. Every project starts with a clear timeline discussion — no surprises, just results.</p>
                         </div>
                     </div>
 
@@ -92,12 +92,12 @@ const FAQ = () => {
                         <div className="flex justify-between items-center cursor-pointer" onClick={() => setShow(show === 5 ? null : 5)}>
                             <div className='flex gap-5'>
                                 <h6 className="1 text-[#b8962e] text-[20px] font-bold">05</h6>
-                                <p className="2 text-[rgba(255,255,255,0.9)] text-[20px] select-none font-bold">What kind of projects do you work on?</p>
+                                <p className="2 text-[rgba(255,255,255,0.9)] text-[20px] select-none font-bold">How can I hire you or get in touch?</p>
                             </div>
                           <div ><IoIosArrowDown className={`text-[#b8962e] text-[30px] transition-transform duration-300 ${show === 5 ? 'rotate-180' : '' }`}/></div>
                         </div>
-                        <div className={`pl-10 pr-20 transition-all duration-300 ${show === 5 ? 'max-h-14 pt-2.5' : 'max-h-1.5 overflow-hidden'}`}>
-                          <p className={`${cormorant.className} font-medium select-none text-[#9A9A9A] text-[19px]`}>I specialize in web design and front-end development — building responsive, modern websites and portfolios. I also offer UI/UX design, landing page design, and custom web solutions tailored to your needs.</p>
+                        <div className={`pl-10 pr-20 transition-all duration-300 ${show === 5 ? 'max-h-19 pt-2.5' : 'max-h-1.5 overflow-hidden'}`}>
+                          <p className={`${cormorant.className} font-medium select-none text-[#9A9A9A] text-[19px]`}>Simple — drop a message through the contact form below or reach out via email. I respond within 24 hours and I'm always open to discussing new opportunities, big or small.</p>
                         </div>
                     </div>
 

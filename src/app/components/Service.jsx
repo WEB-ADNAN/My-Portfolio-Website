@@ -3,8 +3,13 @@
 import { motion } from "framer-motion";
 import { Cormorant_Garamond, DM_Sans, Playfair_Display } from 'next/font/google';
 import React from 'react'
-import { IoServerSharp } from "react-icons/io5";
 import 'animate.css';
+import { TbStack2 } from "react-icons/tb";
+import { TbDeviceDesktopCode } from "react-icons/tb";
+import { TbRefreshAlert } from "react-icons/tb";
+import { TbLayout2 } from "react-icons/tb";
+import { TbDatabaseCog } from "react-icons/tb";
+import { TbZoomCode } from "react-icons/tb";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -43,9 +48,9 @@ const Service = () => {
                 viewport={{ once: true }}
                 >
                 <div className="h-full hover:bg-[#0f1420] duration-200 py-8.5 px-7.5 border border-[rgba(212,175,55,0.5)] rounded-[14px] shadow-md shadow-amber-400">
-                    <IoServerSharp className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
-                    <h4 className={`${playfair.className} text-[24px] font-bold leading-[160%] text-[#FFFFFF] pt-2.5 pb-6`}>Modern & Responsive Website Design</h4>
-                    <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A]`}>Crafting sleek, modern websites that look great on all devices. Focused on clean design, usability, and smooth user experience.</p>
+                    <TbStack2 className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
+                    <h4 className={`${playfair.className} text-[24px] font-bold leading-[160%] text-[#FFFFFF] pt-2.5 pb-6`}>Full-Stack Web Development</h4>
+                    <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A] pr-3.75`}>End-to-end web applications built with React, Next.js, Node.js, and MongoDB. From database design to user interface fully functional, scalable, and production-ready.</p>
                 </div>
                 </motion.div>
 
@@ -56,9 +61,9 @@ const Service = () => {
                 viewport={{ once: true }}
                 >
                 <div className="h-full hover:bg-[#0f1420] duration-200 py-8.5 px-7.5 border border-[rgba(212,175,55,0.5)] rounded-[14px] shadow-md shadow-amber-400">
-                    <IoServerSharp className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
-                    <h4 className={`${playfair.className} text-[24px] font-bold leading-[160%] text-[#FFFFFF] pt-2.5 pb-6`}>High-Converting Landing Page Design</h4>
-                    <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A]`}>Designing landing pages that capture attention and boost conversions. Built with strategy, clarity, and user-focused structure.</p>
+                    <TbDeviceDesktopCode className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
+                    <h4 className={`${playfair.className} text-[24px] font-bold leading-[160%] text-[#FFFFFF] pt-2.5 pb-6`}>Responsive UI Development</h4>
+                    <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A] `}>Pixel-perfect, mobile-first interfaces built with React and Tailwind CSS. Every component is crafted for consistency, speed, and seamless experience across all devices.</p>
                 </div>
                 </motion.div>
 
@@ -69,9 +74,9 @@ const Service = () => {
                 viewport={{ once: true }}
                 >
                 <div className="h-full hover:bg-[#0f1420] duration-200 py-8.5 px-7.5 border border-[rgba(212,175,55,0.5)] rounded-[14px] shadow-md shadow-amber-400">
-                    <IoServerSharp className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
-                    <h4 className={`${playfair.className} text-[24px] font-bold leading-[160%] text-[#FFFFFF] pt-2.5 pb-6`}>High-Converting Landing Page Design</h4>
-                    <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A]`}>Designing landing pages that capture attention and boost conversions. Built with strategy, clarity, and user-focused structure.</p>
+                    <TbRefreshAlert className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
+                    <h4 className={`${playfair.className} text-[24px] font-bold leading-[160%] text-[#FFFFFF] pt-2.5 pb-6`}>Website Redesign And Optimization</h4>
+                    <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A] pr-2.5`}>Transforming outdated websites into modern, high-performing platforms. Improved structure, faster load times, and a cleaner codebase without losing what already works.</p>
                 </div>
                 </motion.div>
             </div>
@@ -85,9 +90,9 @@ const Service = () => {
                 viewport={{ once: true }}
                 >
                 <div className="h-full hover:bg-[#0f1420] duration-200 py-8.5 px-7.5 border border-[rgba(212,175,55,0.5)] rounded-[14px] shadow-md shadow-amber-400">
-                    <IoServerSharp className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
-                    <h4 className={`${playfair.className} text-[24px] font-bold leading-[160%] text-[#FFFFFF] pt-2.5 pb-6`}>Website Redesign & Frontend Improvement</h4>
-                    <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A]`}>Revamping outdated websites with a modern, clean, and responsive layout. Improving structure, performance, and visual consistency using best frontend practices.</p>
+                    <TbLayout2 className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
+                    <h4 className={`${playfair.className} text-[24px] font-bold leading-[160%] text-[#FFFFFF] pt-2.5 pb-6`}>Landing Page And Conversion Design</h4>
+                    <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A] `}>High-impact landing pages built to capture attention and drive action. Crafted with clean layout, persuasive structure, and responsive design that works on every screen.</p>
                 </div>
                 </motion.div>
 
@@ -98,9 +103,9 @@ const Service = () => {
                 viewport={{ once: true }}
                 >
                 <div className="1 h-full hover:bg-[#0f1420] duration-200 py-8.5 px-7.5 border border-[rgba(212,175,55,0.5)] rounded-[14px] shadow-md shadow-amber-400">
-                    <IoServerSharp className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
-                    <h4 className={`${playfair.className} text-[24px] font-bold leading-[160%] text-[#FFFFFF] pt-2.5 pb-6`}>React & Next.js Web Development</h4>
-                    <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A]`}>Building dynamic and scalable web applications with modern tools. Clean architecture, reusable components, and optimized performance.</p>
+                    <TbDatabaseCog className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
+                    <h4 className={`${playfair.className} text-[24px] font-bold leading-[160%] text-[#FFFFFF] pt-2.5 pb-6`}>Database Architecture And Management</h4>
+                    <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A] `}>Scalable MongoDB database structures designed for real-world applications. Efficient schemas, optimized queries, and clean data management from the ground up.</p>
                 </div>
                 </motion.div>
 
@@ -111,9 +116,9 @@ const Service = () => {
                 viewport={{ once: true }}
                 >
                 <div className="h-full hover:bg-[#0f1420] duration-200 py-8.5 px-7.5 border border-[rgba(212,175,55,0.5)] rounded-[14px] shadow-md shadow-amber-400">
-                    <IoServerSharp className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
-                    <h4 className={`${playfair.className} text-[24px] font-bold leading-[160%] text-[#FFFFFF] pt-2.5 pb-6`}>Bug Fixing & Speed Optimization</h4>
-                    <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A]`}>Building dynamic and scalable web applications with modern tools. Clean architecture, reusable components, and optimized performance.</p>
+                    <TbZoomCode className='text-[rgba(212,175,55,0.5)] text-[50px] border border-[rgba(212,175,55,0.5)] p-2.5 rounded-lg pb-1.5'/>
+                    <h4 className={`${playfair.className} text-[24px] font-bold leading-[160%] text-[#FFFFFF] pt-2.5 pb-6`}>Bug Fixing And Performance Tuning</h4>
+                    <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A] `}>Diagnosing and resolving frontend and backend issues with precision. From slow load times to broken APIs I find the root cause and fix it clean.</p>
                 </div>
                 </motion.div>
             </div>

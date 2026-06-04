@@ -1,6 +1,8 @@
 import { Cormorant_Garamond, DM_Sans, Playfair_Display } from 'next/font/google';
 import React from 'react'
-import { MdWorkOutline } from "react-icons/md";
+import { GrLanguage } from "react-icons/gr";
+import { FcGraduationCap } from "react-icons/fc";
+import { FcWorkflow } from "react-icons/fc";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -31,7 +33,7 @@ const Resume = () => {
 
                 <div className="pt-12 flex flex-col gap-8">
                     <div className="">
-                        <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3 flex items-center gap-2.5`}><MdWorkOutline /> <span className='text-[#D4AF37] italic'>Experience</span></h3>
+                        <a className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3 flex items-center gap-2.5`}><FcWorkflow /> <span className='text-[#D4AF37] italic'>Experience</span></a>
                         <div className="grid grid-cols-2 gap-12.5">
                             <div className="p-5 border border-[#c9a84c33] rounded-lg bg-[#111118]">
                                 <h3 className={`text-[#e8e8f0] text-[24px] ${playfair.className} font-bold`}>Frontend Development</h3>
@@ -49,7 +51,7 @@ const Resume = () => {
 
 
                     <div className="">
-                        <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3 flex items-center gap-2.5`}><MdWorkOutline /> <span className='text-[#D4AF37] italic'>Education</span></h3>
+                        <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3 flex items-center gap-2.5`}><FcGraduationCap /> <span className='text-[#D4AF37] italic'>Education</span></h3>
                         <div className="grid grid-cols-2 gap-12.5">
                             <div className="p-5 border border-[#c9a84c33] rounded-lg bg-[#111118]">
                                 <h3 className={`text-[#e8e8f0] text-[24px] ${playfair.className} font-bold`}>Diploma In Computer Science & Tech.</h3>
@@ -67,7 +69,7 @@ const Resume = () => {
 
 
                     <div className="">
-                        <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3 flex items-center gap-2.5`}><MdWorkOutline /> <span className='text-[#D4AF37] italic'>Language</span></h3>
+                        <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3 flex items-center gap-2.5`}><GrLanguage /> <span className='text-[#D4AF37] italic'>Language</span></h3>
                         <div className="grid grid-cols-2 gap-12.5">
                             <div className="p-5 border border-[#c9a84c33] rounded-lg bg-[#111118]">
                                 <h4 className={`text-[rgba(232,200,74,0.8)] text-[18px] font-inter font-medium py-2.5`}>Nov 2025 - Feb 2026</h4>

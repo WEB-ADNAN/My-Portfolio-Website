@@ -49,3 +49,35 @@
   width: max-content;
   animation: marquee 20s linear infinite;
 }
+
+
+@theme {
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+.react-tabs__tab--selected {
+    color: #FFFFFF !important;
+    background: #FD6F00!important;
+    border-color: none!important;
+    border: none!important;
+    border-radius: 8px!important;
+}
+
+.react-tabs__tab {
+    border: none!important;
+    padding: 0!important;
+
+}
+.react-tabs__tab:focus:after {
+  display: none;
+}
+
+.react-tabs__tab-list {
+    border-bottom: none!important;
+    margin: 0!important;
+}
