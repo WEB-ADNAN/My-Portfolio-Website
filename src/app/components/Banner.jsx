@@ -28,7 +28,7 @@ const playfair = Playfair_Display({
 const Banner = () => {
   return (
     <>
-        <section className="relative bg-[#0a0d14] overflow-hidden pt-26.5 pb-37.5">
+        <section className="relative bg-[#0a0d14] overflow-hidden pt-35 pb-30 md:pt-47.5 md:pb-37.5">
 
             <div className="absolute -top-20 -right-16 w-105 h-105 rounded-full pointer-events-none z-0
                 bg-[radial-gradient(circle,rgba(212,175,55,0.13)_0%,transparent_70%)]
@@ -40,14 +40,14 @@ const Banner = () => {
 
 
 
-            <div className="container flex items-center">
-                <div className="w-[70%]">
+            <div className="container  md:flex-row md:flex md:text-left items-center px-4 md:px-0 gap-15 md:gap-0">
+                <div className="w-full md:w-[70%]">
 
                     <FadeLeft>
                     <div className="">
-                        <h4 className={`${dmSans.className} text-[24px] font-semibold text-[#C9A227]`}>Hi I am</h4>
-                        <h5 className={`${dmSans.className} text-[28px] font-bold text-[#9A9A9A] pt-2.5 pb-6`}>MD. ADNAN SAMI</h5>
-                        <h3 className={`${cormorant.className} text-[70px] font-black text-[#FFFFFF] leading-[100%] tracking-[0.03em]`}>Full Stack<span className={`${cormorant.className} italic text-[#D4AF37]`}> Developer</span></h3>
+                        <h4 className={`${dmSans.className} text-[18px] md:text-[24px] font-semibold text-[#C9A227]`}>Hi I am</h4>
+                        <h5 className={`${dmSans.className} text-[22px] md:text-[28px] font-bold text-[#9A9A9A] pt-1.5 md:pt-2.5 pb-3.5 md:pb-6`}>MD. ADNAN SAMI</h5>
+                        <h3 className={`${cormorant.className} text-[38px] md:text-[70px] font-black text-[#FFFFFF] leading-[100%] tracking-[0.03em]`}>Full Stack<span className={`${cormorant.className} italic text-[#D4AF37]`}> Developer</span></h3>
 
                         <div className="icons flex gap-2.5 items-center pt-4">
                             <div className="1 flex gap-1.25">
@@ -62,9 +62,9 @@ const Banner = () => {
                             </div>
                         </div>
 
-                        <p className={`${dmSans.className} text-[20px] text-[#9A9A9A] pt-4 pr-32.5`}>I craft fast, scalable web applications with clean code and pixel-perfect precision delivering intuitive interfaces, powerful backends, and seamless experiences that make an impact. Available for job and freelance projects.</p>
+                        <p className={`${dmSans.className} text-[20px] text-[#9A9A9A] pt-4 md:pr-32.5 pr-5`}>I craft fast, scalable web applications with clean code and pixel-perfect precision delivering intuitive interfaces, powerful backends, and seamless experiences that make an impact. Available for job and freelance projects.</p>
 
-                        <div className="banner-button flex gap-6 pt-15.25 pb-20">
+                        <div className="banner-button md:flex md:flex-row flex flex-col gap-8 md:gap-6 pt-10 md:pt-15.25 pb-10 md:pb-20">
                             <div className="B1">
                                 <Link href="" className='text-[#FFFFFF] border border-[#9A9A9A] py-3 px-10 rounded-[10px] hover:bg-[#F0D080] duration-300 hover:text-[#000000]'>HIRE ME</Link>
                             </div>
@@ -74,19 +74,19 @@ const Banner = () => {
                         </div>
 
                         <div className="working flex">
-                            <div className="pr-7.5 border-r border-[rgba(212,175,55,0.5)] flex flex-col items-center">
-                                <h3 className={`${playfair.className} normal text-[60px] font-normal text-[#D4AF37] leading-[100%] tracking-[0.03em]`}>1.5yr</h3>
-                                <h4 className={`${cormorant.className} text-[20px] text-[#9A9A9A] pt-4 uppercase`}>Experience</h4>
+                            <div className="pr-4 md:pr-7.5 border-r border-[rgba(212,175,55,0.5)] flex flex-col items-center">
+                                <h3 className={`${playfair.className} normal text-[30px] md:text-[60px] font-normal text-[#D4AF37] leading-[100%] tracking-[0.03em]`}>1.5yr</h3>
+                                <h4 className={`${cormorant.className} md:text-[20px] text-[#9A9A9A] pt-4 uppercase`}>Experience</h4>
                             </div>
 
-                            <div className="px-7.5 border-r border-[rgba(212,175,55,0.5)] flex flex-col items-center">
-                                <h3 className={`${playfair.className} normal text-[60px] font-normal text-[#D4AF37] leading-[100%] tracking-[0.03em]`}>15+</h3>
-                                <h4 className={`${cormorant.className} text-[20px] text-[#9A9A9A] pt-4 uppercase`}>Projects Done</h4>
+                            <div className="px-4 md:px-7.5 border-r border-[rgba(212,175,55,0.5)] flex flex-col items-center">
+                                <h3 className={`${playfair.className} normal text-[30px] md:text-[60px] font-normal text-[#D4AF37] leading-[100%] tracking-[0.03em]`}>15+</h3>
+                                <h4 className={`${cormorant.className} md:text-[20px] text-[#9A9A9A] pt-4 uppercase`}>Projects Done</h4>
                             </div>
 
-                            <div className="pl-7.5 flex flex-col items-center">
-                                <h3 className={`${playfair.className} normal text-[60px] font-normal text-[#D4AF37] leading-[100%] tracking-[0.03em]`}>100%</h3>
-                                <h4 className={`${cormorant.className} text-[20px] text-[#9A9A9A] pt-4 uppercase`}>Happy Clients</h4>
+                            <div className="pl-4 md:pl-7.5 flex flex-col items-center">
+                                <h3 className={`${playfair.className} normal text-[30px] md:text-[60px] font-normal text-[#D4AF37] leading-[100%] tracking-[0.03em]`}>100%</h3>
+                                <h4 className={`${cormorant.className} md:text-[20px] text-[#9A9A9A] pt-4 uppercase`}>Happy Clients</h4>
                             </div>
                         </div>
 
@@ -95,11 +95,11 @@ const Banner = () => {
                 </div>
 
                 
-                <div className="w-[30%]">
+                <div className="md:w-[30%] pt-15 md:pt-0">
                  <FadeRight> 
                 <div className="flex justify-center items-center relative">
-
-                    <div className="absolute w-100 h-100 rounded-full border border-[rgba(212,175,55,0.18)] animate-[spinSlow_12s_linear_infinite]">
+                    {/* outer div */}
+                    <div className="absolute w-85 h-85 md:w-100 md:h-100 rounded-full border border-[rgba(212,175,55,0.18)] animate-[spinSlow_12s_linear_infinite]">
 
                     <span className="absolute w-2 h-2 rounded-full bg-[#D4AF37] -top-1 left-1/2 -translate-x-1/2
                     shadow-[0_0_8px_rgba(212,175,55,0.65)]" />
@@ -110,11 +110,12 @@ const Banner = () => {
                     <span className="absolute w-2 h-2 rounded-full bg-[#D4AF37] -left-1 top-1/2 -translate-y-1/2
                     shadow-[0_0_8px_rgba(212,175,55,0.65)]" />
                     </div>
-
-                    <div className="relative w-82.5 h-82.5 overflow-hidden
+                    {/* inner div */}
+                    <div className="relative w-70 h-68 md:w-82.5 md:h-82.5 overflow-hidden
                     bg-linear-to-br from-[#1a2340] to-[#0f1726]
                     border border-[rgba(212,175,55,0.14)]
                     rounded-[60%_40%_55%_45%/50%_55%_45%_50%] z-10">
+                        
 
                     {/* overlay */}
                     <div className="absolute inset-0 bg-linear-to-b from-transparent to-[rgba(10,13,20,0.45)] z-10" />

@@ -32,15 +32,15 @@ const playfair = Playfair_Display({
 
 const Service = () => {
   return (
-    <section className='bg-[#080b11] pt-20 pb-37.5'>
-        <div className="container">
+    <section className='bg-[#080b11] pt-20 pb-20 md:pb-37.5'>
+        <div className="container px-4 md:px-0">
             <div className="headline flex flex-col justify-center items-center">
                 <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>WHAT I DO</h4>
                 <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3`}>My <span className='text-[#D4AF37] italic'>Services</span></h3>
-                <p className={`${cormorant.className} text-[20px] font-medium leading-[160%] text-[#9A9A9A]`}>Crafting beautiful and functional digital products</p>
+                <p className={`${cormorant.className} text-[20px] pr-2.5 md:pr-0 text-center font-medium leading-[160%] text-[#9A9A9A]`}>Crafting beautiful and functional digital products</p>
             </div>
 
-            <div className="grid grid-cols-3 gap-10 mt-20">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 md:mt-20">
                 <motion.div
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -81,7 +81,7 @@ const Service = () => {
                 </motion.div>
             </div>
 
-            <div className="grid grid-cols-3 gap-10 mt-10 items-stretch">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 items-stretch">
 
                 <motion.div
                 initial={{ opacity: 0, y: 60 }}
