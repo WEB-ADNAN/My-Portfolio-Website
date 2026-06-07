@@ -35,8 +35,8 @@ const playfair = Playfair_Display({
 const Portfolio = () => {
   return (
     <>
-        <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-20 pb-37.5'>
-            <div className="container">
+        <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-10 md:pt-20 pb-20 md:pb-37.5'>
+            <div className="container px-4 md:px-0">
                 <div className="headline flex flex-col justify-center items-center">
                     <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>My Work</h4>
                     <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3`}>Port<span className='text-[#D4AF37] italic'>folio</span></h3>
@@ -45,19 +45,19 @@ const Portfolio = () => {
 
                 <div className=" pt-15">
                   <Tabs>
-                    <TabList>
-                      <div className="flex gap-6 justify-center ">
-                        <Tab>
-                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 py-2.5 rounded-lg `}>ALL</button> 
+                    <TabList >
+                      <div className="grid grid-cols-2 md:flex gap-6 justify-center ">
+                        <Tab >
+                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-18.5 py-3.5 md:px-10 md:py-2.5 rounded-lg `}>ALL</button> 
                         </Tab>
                         <Tab>
-                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 py-2.5 rounded-lg `}>REACT / NEXT.JS</button>
+                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 py-px md:py-2.5 rounded-lg `}>REACT / NEXT.JS</button>
                         </Tab>
                         <Tab>
-                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 py-2.5 rounded-lg `}>HTML / CSS</button>
+                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-15 md:px-10 md:py-2.5 rounded-lg `}>HTML / CSS</button>
                         </Tab>
                         <Tab>
-                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 py-2.5 rounded-lg `}>Tailwind / Bootstrap</button>
+                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 md:py-2.5 rounded-lg `}>Tailwind / Bootstrap</button>
                         </Tab>
                       </div>
                     </TabList>
@@ -70,12 +70,14 @@ const Portfolio = () => {
                           modules={[Autoplay]}
                           spaceBetween={20}
                           slidesPerView={3}
-                          navigation
-                          pagination={{ clickable: true }}
-                          speed={1500}
-                          autoplay={{
-                          delay: 3000,
+                          breakpoints={{
+                            0:    { slidesPerView: 1 },
+                            640:  { slidesPerView: 1 },
+                            768:  { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
                           }}
+                          speed={1500}
+                          autoplay={{ delay: 3000 }}
                           loop={true}
                         >
 

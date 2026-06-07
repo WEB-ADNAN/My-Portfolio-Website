@@ -26,8 +26,8 @@ const playfair = Playfair_Display({
 const Contact = () => {
   return (
     <>
-        <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-20 pb-37.5'>
-            <div className="container">
+        <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-12 md:pt-20 md:pb-37.5 pb-20'>
+            <div className="container px-4 md:px-0">
 
                 <div className="headline flex flex-col justify-center items-center">
                     <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>Get In Touch</h4>
@@ -35,7 +35,7 @@ const Contact = () => {
                     <p className={`${cormorant.className} text-[20px] font-medium leading-[160%] text-[#9A9A9A]`}>Let's create something exceptional together</p>
                 </div>
 
-                <div className="flex pt-20 justify-around">
+                <div className="md:flex md:flex-row flex flex-col gap-8 md:gap-0 pt-20 justify-around">
 
                     <div className="w-[60%]">
                         <div className="flex items-center gap-5 w-100 border-b border-[rgba(212,175,55,0.2)] mb-6">
@@ -79,19 +79,19 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="w-[40%]">
+                    <div className="md:w-[40%]">
                         <div className="form flex flex-col gap-7.5">
                             <div className="1">
-                                <input type="text" placeholder='Your name' className='w-122.75 bg-[#3A3A3A] text-[#9CA3AF] outline-0 py-3 pl-6 text-[24px] rounded-lg border border-[#5A5A5A]'/>
+                                <input type="text" placeholder='Your name' className='w-90 md:w-122.75 bg-[#3A3A3A] text-[#9CA3AF] outline-0 py-3 pl-6 text-[24px] rounded-lg border border-[#5A5A5A]'/>
                             </div>
                             <div className="1">
-                                <input type="text" placeholder='Your email' className='w-122.75 bg-[#3A3A3A] text-[#9CA3AF] outline-0 py-3 pl-6 text-[24px] rounded-lg border border-[#5A5A5A]'/>
+                                <input type="text" placeholder='Your email' className='w-90 md:w-122.75 bg-[#3A3A3A] text-[#9CA3AF] outline-0 py-3 pl-6 text-[24px] rounded-lg border border-[#5A5A5A]'/>
                             </div>
                             <div className="1">
-                                <input type="text" placeholder='Your message...' className='w-122.75 bg-[#3A3A3A] text-[#9CA3AF] outline-0 pt-3 pb-25 pl-6 text-[24px] rounded-lg border border-[#5A5A5A]'/>
+                                <input type="text" placeholder='Your message...' className='w-90 md:w-122.75 bg-[#3A3A3A] text-[#9CA3AF] outline-0 pt-3 pb-25 pl-6 text-[24px] rounded-lg border border-[#5A5A5A]'/>
                             </div>
                             <div className="button">
-                                <Link href="" className='border border-[#5A5A5A] text-[#FFFFFF] py-3 text-[20px] font-bold font-inter rounded-lg px-41.5 hover:bg-[#3A3A3A] duration-200'>SEND MESSAGE</Link>
+                                <Link href="" className='border border-[#5A5A5A] text-[#FFFFFF] py-3 text-[20px] font-bold font-inter rounded-lg px-25 md:px-41.5 hover:bg-[#3A3A3A] duration-200'>SEND MESSAGE</Link>
                             </div>
                         </div>
                     </div>
