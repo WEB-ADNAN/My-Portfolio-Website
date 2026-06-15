@@ -5,9 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
-import { MdOutlineMail } from "react-icons/md";
-import { IoIosCall } from "react-icons/io";
-
+import { FaGithub } from "react-icons/fa6";
 const playfair = Playfair_Display({
   weight:['700']
 });
@@ -36,21 +34,25 @@ const Footer = () => {
 
               <div className="">
                   <div className="icon flex gap-5 text-[25px] justify-center">
-                    <Link href="https://www.instagram.com/_adnan.sami/">
-                    <FaInstagram className='text-[#D4AF37]'/>
-                    </Link>
+                    <Link href="https://github.com/WEB-ADNAN?tab=repositories" target="_blank">
+                          <FaGithub className='text-[#D4AF37]'/>
+                          </Link>
 
-                    <Link href="https://web.facebook.com/md.adnan.sami.204706">
-                    <FaFacebook className='text-[#D4AF37]'/>
-                    </Link>
+                          <Link href="https://www.linkedin.com/in/adnan-sami-836161405/" target="_blank">
+                          <FaLinkedin className='text-[#D4AF37]'/>
+                          </Link>
 
-                    <Link href="https://www.linkedin.com/in/adnan-sami-836161405/">
-                    <FaLinkedin className='text-[#D4AF37]'/>
-                    </Link>
+                          <Link href="https://www.instagram.com/_adnan.sami/" target="_blank">
+                          <FaInstagram className='text-[#D4AF37]'/>
+                          </Link>
 
-                    <Link href="https://web.whatsapp.com/">
-                    <FaSquareWhatsapp className='text-[#D4AF37]'/>
-                    </Link>
+                          <Link href="https://web.facebook.com/md.adnan.sami.204706" target="_blank">
+                          <FaFacebook className='text-[#D4AF37]'/>
+                          </Link>
+
+                          <Link href="https://web.whatsapp.com/" target="_blank">
+                          <FaSquareWhatsapp className='text-[#D4AF37]'/>
+                          </Link>
                   </div>
 
               </div>

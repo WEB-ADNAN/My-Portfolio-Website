@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-const items = [
+export const items = [
   { name: "HTML5",       icon: "https://thesvg.org/icons/html5/default.svg" },
   { name: "CSS3",        icon: "https://thesvg.org/icons/css3/default.svg" },
   { name: "JavaScript",  icon: "https://thesvg.org/icons/javascript/default.svg" },

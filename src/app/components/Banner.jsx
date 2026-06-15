@@ -7,6 +7,11 @@ import { IoIosStar } from "react-icons/io";
 import Link from 'next/link';
 import adnan from '../../../public/images/adnan.jpeg'
 import Image from 'next/image';
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -24,6 +29,7 @@ const dmSans = DM_Sans({
 const playfair = Playfair_Display({
   weight:['700']
 });
+
 
 const Banner = () => {
   return (
@@ -64,7 +70,33 @@ const Banner = () => {
 
                         <p className={`${dmSans.className} text-[20px] text-[#9A9A9A] pt-4 md:pr-32.5 pr-5`}>I craft fast, scalable web applications with clean code and pixel-perfect precision delivering intuitive interfaces, powerful backends, and seamless experiences that make an impact. Available for job and freelance projects.</p>
 
-                        <div className="banner-button md:flex md:flex-row flex flex-col gap-8 md:gap-6 pt-10 md:pt-15.25 pb-10 md:pb-20">
+                        <div className="pt-5">
+                            <div className="icon flex gap-4 text-[25px] items-center">
+                                <Link href="https://github.com/WEB-ADNAN?tab=repositories" target="_blank">
+                                <FaGithub className='text-[#D4AF37]'/>
+                                </Link>
+
+                                <Link href="https://www.linkedin.com/in/adnan-sami-836161405/" target="_blank">
+                                <FaLinkedin className='text-[#D4AF37]'/>
+                                </Link>
+
+                                <Link href="https://www.instagram.com/_adnan.sami/" target="_blank">
+                                <FaInstagram className='text-[#D4AF37]'/>
+                                </Link>
+
+                                <Link href="https://web.facebook.com/md.adnan.sami.204706" target="_blank">
+                                <FaFacebook className='text-[#D4AF37]'/>
+                                </Link>
+
+                                <Link href="https://web.whatsapp.com/" target="_blank">
+                                <FaSquareWhatsapp className='text-[#D4AF37]'/>
+                                </Link>
+                            </div>
+
+                        </div>
+                        
+
+                        <div className="banner-button md:flex md:flex-row flex flex-col gap-8 md:gap-6 pt-10 md:pt-10 pb-10 md:pb-20">
                             <div className="B1">
                                 <Link href="" className='text-[#FFFFFF] border border-[#9A9A9A] py-3 px-10 rounded-[10px] hover:bg-[#F0D080] duration-300 hover:text-[#000000]'>HIRE ME</Link>
                             </div>
