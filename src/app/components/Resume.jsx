@@ -3,6 +3,8 @@ import React from 'react'
 import { GrLanguage } from "react-icons/gr";
 import { FcGraduationCap } from "react-icons/fc";
 import { FcWorkflow } from "react-icons/fc";
+import FadeLeft from './FadeLeft';
+import Fadeup from './Fadeup';
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -26,12 +28,16 @@ const Resume = () => {
     <>
         <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-12 md:pt-20 pb-20 md:pb-37.5'>
             <div className="container px-4 md:px-0">
+                <FadeLeft>
                 <div className="headline flex flex-col justify-center items-center">
                     <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3`}>My <span className='text-[#D4AF37] italic'>Resume</span></h3>
                     <p className={`${cormorant.className} text-[20px] pr-2.5 md:pr-0 text-center font-medium leading-[160%] text-[#9A9A9A]`}>A quick overview of my experience, education & achievements.</p>
                 </div>
-
+                </FadeLeft>
+                
+                
                 <div className="pt-12 flex flex-col gap-8">
+                    <Fadeup>
                     <div className="">
                         <a className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3 flex items-center gap-2.5`}><FcWorkflow /> <span className='text-[#D4AF37] italic'>Experience</span></a>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12.5">
@@ -48,8 +54,9 @@ const Resume = () => {
                             </div>
                         </div>
                     </div>
-
-
+                    </Fadeup>
+                    
+                    <Fadeup>
                     <div className="">
                         <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3 flex items-center gap-2.5`}><FcGraduationCap /> <span className='text-[#D4AF37] italic'>Education</span></h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12.5">
@@ -66,8 +73,9 @@ const Resume = () => {
                             </div>
                         </div>
                     </div>
+                    </Fadeup>
 
-
+                    <Fadeup>
                     <div className="">
                         <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3 flex items-center gap-2.5`}><GrLanguage /> <span className='text-[#D4AF37] italic'>Language</span></h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12.5">
@@ -82,6 +90,7 @@ const Resume = () => {
                             </div>
                         </div>
                     </div>
+                    </Fadeup>
                 </div>
             </div>
         </section>

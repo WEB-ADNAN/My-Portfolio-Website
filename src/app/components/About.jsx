@@ -4,6 +4,7 @@ import sami from '../../../public/images/sami.jpg'
 import Image from 'next/image';
 import FadeLeft from './FadeLeft';
 import FadeRight from './FadeRight';
+import Fadeup from './FadeLeft';
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -35,11 +36,13 @@ const About = () => {
     <>
         <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-10 pb-20 md:pt-20 md:pb-37.5'>
             <div className="container px-4 md:px-0">
+                <Fadeup>
                 <div className="headline flex flex-col justify-center items-center">
                     <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>Who I Am</h4>
                     <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3`}>About <span className='text-[#D4AF37] italic'>Me</span></h3>
                     <p className={`${cormorant.className} text-[20px] pr-2.5 md:pr-0 text-center font-medium leading-[160%] text-[#9A9A9A]`}>Building complete web experiences, from interface to infrastructure.</p>
                 </div>
+                </Fadeup>
 
                 <div className="flex flex-col md:flex-row md:flex pt-8 md:pt-15 items-center">
                     <div className=" md:w-[40%]">

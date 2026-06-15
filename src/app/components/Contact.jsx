@@ -5,6 +5,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
+import FadeLeft from './FadeLeft';
+import Fadeup from './Fadeup';
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -28,15 +30,17 @@ const Contact = () => {
     <>
         <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-12 md:pt-20 md:pb-37.5 pb-20'>
             <div className="container px-4 md:px-0">
-
+                <Fadeup>
                 <div className="headline flex flex-col justify-center items-center">
                     <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>Get In Touch</h4>
                     <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3`}>Contact  <span className='text-[#D4AF37] italic'>Me</span></h3>
                     <p className={`${cormorant.className} text-[20px] font-medium leading-[160%] text-[#9A9A9A]`}>Let's create something exceptional together</p>
                 </div>
+                </Fadeup>
 
+                <Fadeup>
                 <div className="md:flex md:flex-row flex flex-col gap-8 md:gap-0 pt-20 justify-around">
-
+                
                     <div className="w-[60%]">
                         <div className="flex items-center gap-5 w-100 border-b border-[rgba(212,175,55,0.2)] mb-6">
                             <div className="dot w-2.5 h-2.5 bg-[#D4AF37] rounded-full"></div>
@@ -96,6 +100,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
+                </Fadeup>
             </div>
         </section>
     </>
