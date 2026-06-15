@@ -41,21 +41,21 @@ const Contact = () => {
                 <Fadeup>
                 <div className="md:flex md:flex-row flex flex-col gap-8 md:gap-0 pt-20 justify-around">
                 
-                    <div className="w-[60%]">
-                        <div className="flex items-center gap-5 w-100 border-b border-[rgba(212,175,55,0.2)] mb-6">
+                    <div className="flex flex-col justify-center items-center md:items-start md:justify-start md:w-[60%]">
+                        <div className="flex items-center gap-5 w-80 md:w-100 border-b border-[rgba(212,175,55,0.2)] mb-6">
                             <div className="dot w-2.5 h-2.5 bg-[#D4AF37] rounded-full"></div>
                             <div className="text">
                                 <p className={`${cormorant.className} text-[24px] font-medium leading-[160%] text-[#9A9A9A] pb-3`}>web.adnansami@gmail.com</p>
                             </div>
                         </div>
 
-                        <div className="flex items-center gap-5 w-100 border-b border-[rgba(212,175,55,0.2)] mb-6">
+                        <div className="flex items-center gap-5 w-80 md:w-100 border-b border-[rgba(212,175,55,0.2)] mb-6">
                             <div className="dot w-2.5 h-2.5 bg-[#D4AF37] rounded-full"></div>
                             <div className="text">
                                 <p className={`font-inter text-[20px] font-normal leading-[160%] text-[#9a9a9ad2] pb-3`}>+880 1950 281949</p>
                             </div>
                         </div>
-                        <div className="flex items-center gap-5 w-100 border-b border-[rgba(212,175,55,0.2)]">
+                        <div className="flex items-center gap-5 w-80 md:w-100 border-b border-[rgba(212,175,55,0.2)]">
                             <div className="dot w-2.5 h-2.5 bg-[#D4AF37] rounded-full"></div>
                             <div className="text">
                                 <p className={`${cormorant.className} text-[24px] font-medium leading-[160%] text-[#9A9A9A] pb-3`}>Bangladesh</p>
@@ -83,7 +83,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="md:w-[40%]">
+                    <div className="flex md:flex-col justify-center md:justify-start md:w-[40%]">
                         <div className="form flex flex-col gap-7.5">
                             <div className="1">
                                 <input type="text" placeholder='Your name' className='w-90 md:w-122.75 bg-[#3A3A3A] text-[#9CA3AF] outline-0 py-3 pl-6 text-[24px] rounded-lg border border-[#5A5A5A]'/>
@@ -94,8 +94,8 @@ const Contact = () => {
                             <div className="1">
                                 <input type="text" placeholder='Your message...' className='w-90 md:w-122.75 bg-[#3A3A3A] text-[#9CA3AF] outline-0 pt-3 pb-25 pl-6 text-[24px] rounded-lg border border-[#5A5A5A]'/>
                             </div>
-                            <div className="button">
-                                <Link href="" className='border border-[#5A5A5A] text-[#FFFFFF] py-3 text-[20px] font-bold font-inter rounded-lg px-25 md:px-41.5 hover:bg-[#3A3A3A] duration-200'>SEND MESSAGE</Link>
+                            <div className="button flex justify-center md:justify-start">
+                                <Link href="" className='border border-[#5A5A5A] text-[#FFFFFF] py-3 text-[20px] font-bold font-inter rounded-lg px-22 md:px-41.5 hover:bg-[#3A3A3A] duration-200'>SEND MESSAGE</Link>
                             </div>
                         </div>
                     </div>

@@ -43,17 +43,17 @@ const playfair = Playfair_Display({
 });
 
 const contents = [
-  { id: 1, image: preview, text1: "Exclusive — Full E-Commerce", text2:"React e-commerce platform with cart system, product filtering & JWT authentication.", t1: "React", t2:"Tailwind CSS", t3:"Redux" },
+  { id: 1, image: preview, text1: "Exclusive — Full E-Commerce", text2:"React e-commerce platform with cart system, product filtering & JWT authentication.", t1: "React", t2:"Tailwind", t3:"Redux" },
 
-  { id: 2, image: preview2, text1: "Agency Landing Page", text2:"Professional React agency website with responsive design and testimonials.", t1: "React", t2:"Tailwind CSS", t3:"Redux" },
+  { id: 2, image: preview2, text1: "Agency Landing Page", text2:"Professional React agency website with responsive design and testimonials.", t1: "React", t2:"Tailwind", t3:"Redux" },
 
-  { id: 3, image: portfolio, text1: "My Portfolio Website", text2:"Modern portfolio website with full responsiveness, smooth animations, and all latest technologies.", t1: "Next.js", t2:"Tailwind CSS", t3:"Framer Motion" },
+  { id: 3, image: portfolio, text1: "My Portfolio Website", text2:"Modern portfolio website with full responsiveness, smooth animations.", t1: "Next.js", t2:"Tailwind", t3:"Framer Motion" },
 
   { id: 4, image: cruch, text1: "Church Landing Page", text2:"Professional community website with responsive design and pixel perfect ui.", t1: "HTML", t2:"CSS", t3:"Responsive" },
 
-  { id: 5, image: creative, text1: "Creative Skill Website", text2:"Creative skill platform showcasing modern learning and development solutions.", t1: "Tailwind CSS", t2:"JavaScript", t3:"Responsive" },
+  { id: 5, image: creative, text1: "Creative Skill Website", text2:"Creative skill platform showcasing modern learning and development solutions.", t1: "Tailwind", t2:"JavaScript", t3:"Responsive" },
 
-  { id: 6, image: nexcent, text1: "Nexcent Landing Page", text2:"A service-based platform helping clients find experts across different skills.", t1: "HTML", t2:"Tailwind CSS", t3:"Responsive" },
+  { id: 6, image: nexcent, text1: "Nexcent Landing Page", text2:"A service-based platform helping clients find experts across different skills.", t1: "HTML", t2:"Tailwind", t3:"Responsive" },
 
   { id: 7, image: agency, text1: "Creative Agency", text2:"Creative agency delivering modern digital solutions with innovative design.", t1: "HTML", t2:"CSS", t3:"Bootstrap" },
 
@@ -126,23 +126,23 @@ const Portfolio = () => {
                 <div className=" pt-15">
                   <Tabs>
                     <TabList >
-                      <div className="grid grid-cols-2 md:flex gap-6 justify-center ">
+                      <div className="flex gap-6 justify-center ">
                         <Tab >
                           <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-18.5 py-3.5 md:px-10 md:py-2.5 rounded-lg `}>ALL</button> 
                         </Tab>
-                        <Tab>
+                        <Tab className="hidden md:block">
                           <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 py-px md:py-2.5 rounded-lg `}>REACT</button>
                         </Tab>
-                        <Tab>
+                        <Tab className="hidden md:block">
                           <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-15 md:px-10 md:py-2.5 rounded-lg `}>HTML/CSS</button>
                         </Tab>
-                        <Tab>
+                        <Tab className="hidden md:block">
                           <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 md:py-2.5 rounded-lg `}>Tailwind</button>
                         </Tab>
-                        <Tab>
+                        <Tab className="hidden md:block">
                           <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 md:py-2.5 rounded-lg `}>Bootstrap</button>
                         </Tab>
-                        <Tab>
+                        <Tab className="hidden md:block">
                           <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 md:py-2.5 rounded-lg `}>Next.js</button>
                         </Tab>
                       </div>
@@ -172,7 +172,7 @@ const Portfolio = () => {
                             <div className="flex items-center justify-center cursor-pointer">
                               <div className="group border border-[#ffffff28] rounded-xl shadow-md">
                             <div className="img overflow-hidden rounded-t-xl relative">
-                              <Image src={content.image} alt='preview' className='w-106.25 h-70' style={{borderRadius: '12px 12px 0 0'}}></Image>
+                              <Image src={content.image} alt='preview' className='md:w-106.25 h-70' style={{borderRadius: '12px 12px 0 0'}}></Image>
 
                               {/* <div className="btn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-99 opacity-0 group-hover:opacity-100 duration-500">
                                 <div className="flex gap-5 pt-2.5 border-t border-[#ffffff28] pb-2.5 ">
@@ -191,7 +191,7 @@ const Portfolio = () => {
                               <ul className='flex gap-5'>
                               <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>{content.t1}</a></li>
                               <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>{content.t2}</a></li>
-                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>{content.t3}</a></li>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px] invisible md:visible`}>{content.t3}</a></li>
 
                               </ul>
                               </div>
