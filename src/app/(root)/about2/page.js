@@ -1,10 +1,10 @@
 import { Cormorant_Garamond, DM_Sans, Playfair_Display } from 'next/font/google';
 import React from 'react'
-import sami from '../../../public/images/sami.jpg'
+import sami from '../../../../public/images/sami.jpg'
 import Image from 'next/image';
-import FadeLeft from './FadeLeft';
-import FadeRight from './FadeRight';
-import Fadeup from './FadeLeft';
+import FadeLeft from '@/app/components/FadeLeft';
+import FadeRight from '@/app/components/FadeRight';
+import Fadeup from '@/app/components/Fadeup';
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -34,8 +34,8 @@ const skills = [
 const About = () => {
   return (
     <>
-        <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-10 pb-20 md:pt-20 md:pb-37.5'>
-            <div className="container px-4 lg:px-0">
+        <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-10 pb-20 md:pt-30 md:pb-37.5'>
+            <div className="container px-4 md:px-0">
                 <Fadeup>
                 <div className="headline flex flex-col justify-center items-center">
                     <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>Who I Am</h4>
@@ -44,8 +44,8 @@ const About = () => {
                 </div>
                 </Fadeup>
 
-                <div className="flex flex-col lg:flex-row lg:flex pt-8 md:pt-15 items-center">
-                    <div className=" lg:w-[40%]">
+                <div className="flex flex-col md:flex-row md:flex pt-8 md:pt-15 items-center">
+                    <div className=" md:w-[40%]">
                         <FadeLeft>
                         <div className="relative w-85 md:w-100 h-100 md:h-115 rounded-sm overflow-hidden shrink-0 border border-[rgba(212,175,55,0.15)] shadow-lg shadow-amber-400">
 
@@ -60,7 +60,7 @@ const About = () => {
                         </div>
                         </FadeLeft>
                     </div>
-                    <div className="lg:w-[60%] pt-5 md:pt-8 lg:pt-0">
+                    <div className="md:w-[60%] pt-5 md:pt-0">
                         <FadeRight>
                         <div className="text pb-5 md:pb-0">
                             <p className={`${cormorant.className} text-[20px] font-medium leading-[160%] text-[#9A9A9A] pr-5 md:pr-0`}>I'm a passionate MERN Stack Developer who loves turning ideas into real, functional web applications. Though early in my professional journey, I've spent over a year building projects, sharpening my skills, and learning what it truly takes to craft seamless digital experiences.</p>

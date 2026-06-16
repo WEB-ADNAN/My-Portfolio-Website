@@ -11,7 +11,7 @@
 }
 
 .menu ul li{
-    @apply text-[20px] font-inter text-[#8A9BB8] font-normal hover:text-[#D4AF37] duration-300 
+    @apply md:text-[18px] lg:text-[20px] font-inter text-[#8A9BB8] font-normal hover:text-[#D4AF37] duration-300 
 }
 
 

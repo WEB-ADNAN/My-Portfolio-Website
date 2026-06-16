@@ -113,7 +113,7 @@ const Portfolio = () => {
   return (
     <>
         <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-10 md:pt-20 pb-20 md:pb-37.5'>
-            <div className="container px-4 md:px-0">
+            <div className="container px-4 lg:px-0">
               <Fadeup>
                 <div className="headline flex flex-col justify-center items-center">
                     <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>My Work</h4>
@@ -126,24 +126,24 @@ const Portfolio = () => {
                 <div className=" pt-15">
                   <Tabs>
                     <TabList >
-                      <div className="flex gap-6 justify-center ">
+                      <div className="flex md:gap-3 lg:gap-6 justify-center ">
                         <Tab >
-                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-18.5 py-3.5 md:px-10 md:py-2.5 rounded-lg `}>ALL</button> 
+                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-18.5 py-3.5 md:px-5 md:py-2.5 lg:px-10 lg:py-2.5 rounded-lg `}>ALL</button> 
                         </Tab>
                         <Tab className="hidden md:block">
-                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 py-px md:py-2.5 rounded-lg `}>REACT</button>
+                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] md:px-5 md:py-2.5 lg:px-10 lg:py-2.5 rounded-lg `}>REACT</button>
                         </Tab>
                         <Tab className="hidden md:block">
-                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-15 md:px-10 md:py-2.5 rounded-lg `}>HTML/CSS</button>
+                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] md:px-5 md:py-2.5 lg:px-10 lg:py-2.5 rounded-lg `}>HTML/CSS</button>
                         </Tab>
                         <Tab className="hidden md:block">
-                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 md:py-2.5 rounded-lg `}>Tailwind</button>
+                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] md:px-5 md:py-2.5 lg:px-10 lg:py-2.5 rounded-lg `}>Tailwind</button>
                         </Tab>
                         <Tab className="hidden md:block">
-                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 md:py-2.5 rounded-lg `}>Bootstrap</button>
+                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] md:px-5 md:py-2.5 lg:px-10 lg:py-2.5 rounded-lg `}>Bootstrap</button>
                         </Tab>
                         <Tab className="hidden md:block">
-                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] px-10 md:py-2.5 rounded-lg `}>Next.js</button>
+                          <button className={`text-[#C6C6C6] bg-[rgba(255,255,255,0.08)] text-[16px] ${cormorant.className} font-bold leading-[160%] md:px-5 md:py-2.5 lg:px-10 lg:py-2.5 rounded-lg `}>Next.js</button>
                         </Tab>
                       </div>
                     </TabList>
@@ -174,21 +174,13 @@ const Portfolio = () => {
                             <div className="img overflow-hidden rounded-t-xl relative">
                               <Image src={content.image} alt='preview' className='md:w-106.25 h-70' style={{borderRadius: '12px 12px 0 0'}}></Image>
 
-                              {/* <div className="btn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-99 opacity-0 group-hover:opacity-100 duration-500">
-                                <div className="flex gap-5 pt-2.5 border-t border-[#ffffff28] pb-2.5 ">
-                                  <a href="" className='text-[#000000] bg-[#d8b553] border border-[#c9a84c66] py-2 px-3 rounded-[10px] duration-500 flex items-center gap-2 whitespace-nowrap'><LuSquareArrowOutUpRight/> Live Demo</a>
-                                  <a href="" className='text-[#e8e8f0] border border-[#ffffff3a] py-2 px-3 rounded-[10px] bg-[#212148dc] flex items-center gap-2'><FaGithub/> GitHub</a>
-                                </div>
-                              </div>
-                                <div className="black absolute group-hover:bg-[rgba(0,0,0,0.5)] h-87.5 w-106.25 top-0 left-0 duration-300"></div> */}
-
 
                             </div>
                               <div className="valus group bg-[#111118] px-3 rounded-b-xl">
-                              <h3 className={`text-[#FFFFFF] text-[24px] ${playfair.className} font-bold pt-2`}>{content.text1}</h3>
-                              <p className={`text-[#9A9A9A] text-[18px] ${cormorant.className} font-medium pb-3.5 pt-2 h-20`}>{content.text2}</p>
+                              <h3 className={`text-[#FFFFFF] text-[18px] md:text-[20px] lg:text-[24px] ${playfair.className} font-bold pt-2`}>{content.text1}</h3>
+                              <p className={`text-[#9A9A9A] text-[16px] lg:text-[18px] ${cormorant.className} font-medium pb-3.5 pt-2 h-20`}>{content.text2}</p>
                               <div className="teq pb-3.5">
-                              <ul className='flex gap-5'>
+                              <ul className='flex md:gap-2 lg:gap-5'>
                               <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>{content.t1}</a></li>
                               <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>{content.t2}</a></li>
                               <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px] invisible md:visible`}>{content.t3}</a></li>

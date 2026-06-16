@@ -27,7 +27,7 @@ const Resume = () => {
   return (
     <>
         <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-12 md:pt-20 pb-20 md:pb-37.5'>
-            <div className="container px-4 md:px-0">
+            <div className="container px-4 lg:px-0">
                 <FadeLeft>
                 <div className="headline flex flex-col justify-center items-center">
                     <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3`}>My <span className='text-[#D4AF37] italic'>Resume</span></h3>
@@ -40,7 +40,7 @@ const Resume = () => {
                     <Fadeup>
                     <div className="">
                         <a className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3 flex items-center gap-2.5`}><FcWorkflow /> <span className='text-[#D4AF37] italic'>Experience</span></a>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12.5">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12.5">
                             <div className="p-5 border border-[#c9a84c33] rounded-lg bg-[#111118]">
                                 <h3 className={`text-[#e8e8f0] text-[20px] md:text-[24px] ${playfair.className} font-bold`}>Frontend Development</h3>
                                 <h4 className={`text-[rgba(232,200,74,0.8)] text-[16px] md:text-[18px] font-inter font-medium py-2.5`}>June 2024 - Dec 2024</h4>
@@ -59,7 +59,7 @@ const Resume = () => {
                     <Fadeup>
                     <div className="">
                         <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3 flex items-center gap-2.5`}><FcGraduationCap /> <span className='text-[#D4AF37] italic'>Education</span></h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12.5">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12.5">
                             <div className="p-5 border border-[#c9a84c33] rounded-lg bg-[#111118]">
                                 <h3 className={`text-[#e8e8f0] text-[20px] md:text-[24px] ${playfair.className} font-bold`}>Diploma In Computer Science & Tech.</h3>
                                 <h4 className={`text-[rgba(232,200,74,0.8)] text-[16px] md:text-[18px] font-inter font-medium py-2.5`}>2023 - 2026</h4>

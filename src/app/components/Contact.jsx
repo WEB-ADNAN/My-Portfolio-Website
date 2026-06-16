@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <>
         <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-12 md:pt-20 md:pb-37.5 pb-20'>
-            <div className="container px-4 md:px-0">
+            <div className="container px-4 lg:px-0">
                 <Fadeup>
                 <div className="headline flex flex-col justify-center items-center">
                     <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>Get In Touch</h4>
@@ -39,9 +39,9 @@ const Contact = () => {
                 </Fadeup>
 
                 <Fadeup>
-                <div className="md:flex md:flex-row flex flex-col gap-8 md:gap-0 pt-20 justify-around">
+                <div className="lg:flex lg:flex-row flex flex-col gap-8 lg:gap-0 pt-20 justify-around">
                 
-                    <div className="flex flex-col justify-center items-center md:items-start md:justify-start md:w-[60%]">
+                    <div className="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:w-[60%]">
                         <div className="flex items-center gap-5 w-80 md:w-100 border-b border-[rgba(212,175,55,0.2)] mb-6">
                             <div className="dot w-2.5 h-2.5 bg-[#D4AF37] rounded-full"></div>
                             <div className="text">
@@ -83,7 +83,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="flex md:flex-col justify-center md:justify-start md:w-[40%]">
+                    <div className="flex lg:flex-col justify-center lg:justify-start lg:w-[40%]">
                         <div className="form flex flex-col gap-7.5">
                             <div className="1">
                                 <input type="text" placeholder='Your name' className='w-90 md:w-122.75 bg-[#3A3A3A] text-[#9CA3AF] outline-0 py-3 pl-6 text-[24px] rounded-lg border border-[#5A5A5A]'/>

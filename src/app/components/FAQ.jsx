@@ -30,7 +30,7 @@ const FAQ = () => {
   return (
     <>
         <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-12 md:pt-20 pb-15 md:pb-37.5'>
-            <div className="container px-4 md:px-0">
+            <div className="container px-4 lg:px-0">
               <FadeLeft>
                 <div className="headline flex flex-col justify-center items-center">
                     <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>FAQ</h4>
@@ -47,7 +47,7 @@ const FAQ = () => {
                   transition={{ duration: 0.7, ease: "easeOut" }}
                   viewport={{ once: true }}
                   >
-                    <div className=" md:w-250 border border-[rgba(184,150,46,0.4)] py-5 px-4 md:px-7.5 bg-[#0f0f17] rounded-md">
+                    <div className=" lg:w-250 border border-[rgba(184,150,46,0.4)] py-5 px-4 md:px-7.5 bg-[#0f0f17] rounded-md">
                         <div className="flex justify-between items-center cursor-pointer" onClick={() => setShow(show === 1 ? null : 1)}>
                             <div className='flex gap-2 md:gap-5'>
                                 <h6 className="1 text-[#b8962e] text-[14px] md:text-[20px] font-bold">01</h6>
@@ -67,7 +67,7 @@ const FAQ = () => {
                 transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
                 viewport={{ once: true }}
                 >
-                    <div className="md:w-250 border border-[rgba(184,150,46,0.4)] py-5 px-4 md:px-7.5 bg-[#0f0f17] rounded-md">
+                    <div className="lg:w-250 border border-[rgba(184,150,46,0.4)] py-5 px-4 md:px-7.5 bg-[#0f0f17] rounded-md">
                         <div className="flex justify-between items-center cursor-pointer" onClick={() => setShow(show === 2 ? null : 2)}>
                             <div className='flex gap-2 md:gap-5'>
                                 <h6 className="1 text-[#b8962e] text-[14px] md:text-[20px] font-bold">02</h6>
@@ -87,7 +87,7 @@ const FAQ = () => {
                 transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
                 viewport={{ once: true }}
                 >
-                    <div className="md:w-250 border border-[rgba(184,150,46,0.4)] py-5 px-4 md:px-7.5 bg-[#0f0f17] rounded-md">
+                    <div className="lg:w-250 border border-[rgba(184,150,46,0.4)] py-5 px-4 md:px-7.5 bg-[#0f0f17] rounded-md">
                         <div className="flex justify-between items-center cursor-pointer" onClick={() => setShow(show === 3 ? null : 3)}>
                             <div className='flex gap-2 md:gap-5'>
                                 <h6 className="1 text-[#b8962e] text-[14px] md:text-[20px] font-bold">03</h6>
@@ -107,7 +107,7 @@ const FAQ = () => {
                 transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
                 viewport={{ once: true }}
                 >
-                    <div className="md:w-250 border border-[rgba(184,150,46,0.4)] py-5 px-4 md:px-7.5 bg-[#0f0f17] rounded-md">
+                    <div className="lg:w-250 border border-[rgba(184,150,46,0.4)] py-5 px-4 md:px-7.5 bg-[#0f0f17] rounded-md">
                         <div className="flex justify-between items-center cursor-pointer" onClick={() => setShow(show === 4 ? null : 4)}>
                             <div className='flex gap-2 md:gap-5'>
                                 <h6 className="1 text-[#b8962e] text-[14px] md:text-[20px] font-bold">04</h6>
@@ -127,7 +127,7 @@ const FAQ = () => {
                 transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
                 viewport={{ once: true }}
                 >
-                    <div className="md:w-250 border border-[rgba(184,150,46,0.4)] py-5 px-4 md:px-7.5 bg-[#0f0f17] rounded-md">
+                    <div className="lg:w-250 border border-[rgba(184,150,46,0.4)] py-5 px-4 md:px-7.5 bg-[#0f0f17] rounded-md">
                         <div className="flex justify-between items-center cursor-pointer" onClick={() => setShow(show === 5 ? null : 5)}>
                             <div className='flex gap-2 md:gap-5'>
                                 <h6 className="1 text-[#b8962e] text-[14px] md:text-[20px] font-bold">05</h6>
@@ -147,7 +147,7 @@ const FAQ = () => {
                 transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
                 viewport={{ once: true }}
                 >
-                    <div className="w-80 md:w-250 border border-[rgba(184,150,46,0.4)] py-5 px-7.5 bg-[#0f0f17] rounded-md mt-5 flex flex-col md:flex md:flex-row md:justify-between md:items-center">
+                    <div className="w-80 md:w-170 lg:w-250 border border-[rgba(184,150,46,0.4)] py-5 px-7.5 bg-[#0f0f17] rounded-md mt-5 flex flex-col md:flex md:flex-row md:justify-between md:items-center">
                         <div className="">
                           <h2 className='md:text-[22px] text-[18px] text-[rgba(255,255,255,0.9)] font-bold font-inter'>Still have questions?</h2>
                           <p className={`${cormorant.className} text-[16px] md:text-[20px] font-medium leading-[160%] text-[#9A9A9A]`}>I'm just a message away. Let's talk.</p>

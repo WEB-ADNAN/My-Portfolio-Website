@@ -31,20 +31,20 @@ const Navbar = () => {
   return (
     <>
         <section className={`bg-[#080b11] fixed z-99 border-b border-[rgba(212,175,55,0.5)] w-full duration-700 transition-all ease-in-out ${isSticky ? ' py-4 bg-[rgba(8,11,17,0.6)]' : 'py-5.5'}`}>
-            <div className="container px-4 md:px-0">
+            <div className="container px-4 lg:px-0">
                 <div className="flex items-center justify-between">
                     <div className="1 ">
-                        <a href="" className={`${playfair.className} text-[30px] text-[#D4AF37] font-bold`} >ADNAN SAMI</a>
+                        <Link href="/" className={`${playfair.className} sm:text-[30px] md:text-[28px] text-[30px] text-[#D4AF37] font-bold`} >ADNAN SAMI</Link>
                     </div>
                     <div className="md:hidden cursor-pointer">
                         <IoMenu onClick={()=> setMenu(true)} className='text-[36px] text-[#8A9BB8]'/>
                     </div>
 
                     <div className="menu hidden md:block">
-                        <ul className='flex gap-15'>
+                        <ul className='flex md:gap-6 lg:gap-15'>
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="/service2">Services</Link></li>
-                            <li><Link href="">About me</Link></li>
+                            <li><Link href="/about2">About me</Link></li>
                             <li><Link href="">Portfolio</Link></li>
                             <li><Link href="">Contact me</Link></li>
                         </ul>
@@ -64,7 +64,7 @@ const Navbar = () => {
                         
                     </div>
 
-                    <div className="button hidden md:block">
+                    <div className="button hidden lg:block">
                         <a className={`${playfair.className} text-[16px] text-[#FFFFFF] font-bold py-3 px-10 border-2 border-[#2A3A5C] rounded-lg hover:bg-[#D4AF37] hover:border-[#D4AF37] duration-500`} href="">Hire Me</a>
                     </div>
                 </div>

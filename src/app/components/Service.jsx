@@ -34,7 +34,7 @@ const playfair = Playfair_Display({
 const Service = () => {
   return (
     <section className='bg-[#080b11] pt-20 pb-20 md:pb-37.5'>
-        <div className="container px-4 md:px-0">
+        <div className="container px-4 lg:px-0">
             <Fadeup>
             <div className="headline flex flex-col justify-center items-center">
                 <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>WHAT I DO</h4>
@@ -43,7 +43,7 @@ const Service = () => {
             </div>
             </Fadeup>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 md:mt-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 md:mt-20">
                 <motion.div
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -82,9 +82,6 @@ const Service = () => {
                     <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A] pr-2.5`}>Transforming outdated websites into modern, high-performing platforms. Improved structure, faster load times, and a cleaner codebase without losing what already works.</p>
                 </div>
                 </motion.div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 items-stretch">
 
                 <motion.div
                 initial={{ opacity: 0, y: 60 }}
@@ -124,7 +121,10 @@ const Service = () => {
                     <p className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#9A9A9A] `}>Diagnosing and resolving frontend and backend issues with precision. From slow load times to broken APIs I find the root cause and fix it clean.</p>
                 </div>
                 </motion.div>
+
             </div>
+
+            
 
         </div>
     </section>

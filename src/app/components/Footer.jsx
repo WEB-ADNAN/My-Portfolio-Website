@@ -23,11 +23,11 @@ const Footer = () => {
   return (
     <>
       <footer className='bg-[#080b11] pt-10 border-t border-[rgba(212,175,55,0.5)]'>
-        <div className="container px-4 md:px-0">
+        <div className="container px-4 lg:px-0">
           <div className="">
             <div className="1 md:flex md:flex-row flex flex-col md:gap-0 gap-5 md:items-center text-center md:text-left justify-between pb-8 md:pb-12.5">
 
-              <div className="logo md:w-[25%]">
+              <div className="logo md:w-[60%] lg:w-[25%]">
                 <a href="" className={`${playfair.className} text-[30px] text-[#D4AF37] font-bold`} >ADNAN SAMI</a>
                 <p className={`${cormorant.className} text-[20px] font-medium leading-[160%] text-[#9A9A9A]`}>Web designer & developer crafting modern digital experiences with precision and purpose.</p>
               </div>
