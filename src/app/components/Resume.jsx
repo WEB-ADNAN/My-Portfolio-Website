@@ -27,7 +27,7 @@ const Resume = () => {
   return (
     <>
         <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-12 md:pt-20 pb-20 md:pb-37.5'>
-            <div className="container px-4 lg:px-0">
+            <div className="container px-4 lg:px-3 xl:px-2 2xl:px-0">
                 <FadeLeft>
                 <div className="headline flex flex-col justify-center items-center">
                     <h3 className={`${cormorant.className} text-[40px] font-bold leading-[100%] text-[#9A9A9A] pb-4.5 pt-3`}>My <span className='text-[#D4AF37] italic'>Resume</span></h3>

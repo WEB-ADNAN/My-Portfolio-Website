@@ -35,7 +35,7 @@ const About = () => {
   return (
     <>
         <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-10 pb-20 md:pt-20 md:pb-37.5'>
-            <div className="container px-4 lg:px-0">
+            <div className="container px-4 lg:px-3 xl:px-2 2xl:px-0">
                 <Fadeup>
                 <div className="headline flex flex-col justify-center items-center">
                     <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>Who I Am</h4>
@@ -44,7 +44,7 @@ const About = () => {
                 </div>
                 </Fadeup>
 
-                <div className="flex flex-col lg:flex-row lg:flex pt-8 md:pt-15 items-center">
+                <div className="flex flex-col lg:flex-row gap-0 lg:gap-6 xl:gap-0 lg:flex pt-8 md:pt-15 items-center">
                     <div className=" lg:w-[40%]">
                         <FadeLeft>
                         <div className="relative w-85 md:w-100 h-100 md:h-115 rounded-sm overflow-hidden shrink-0 border border-[rgba(212,175,55,0.15)] shadow-lg shadow-amber-400">

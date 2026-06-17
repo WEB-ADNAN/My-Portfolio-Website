@@ -30,7 +30,7 @@ const FAQ = () => {
   return (
     <>
         <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-12 md:pt-20 pb-15 md:pb-37.5'>
-            <div className="container px-4 lg:px-0">
+            <div className="container px-4 lg:px-3 xl:px-2 2xl:px-0">
               <FadeLeft>
                 <div className="headline flex flex-col justify-center items-center">
                     <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>FAQ</h4>

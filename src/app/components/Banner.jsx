@@ -46,8 +46,8 @@ const Banner = () => {
 
 
 
-            <div className="container  lg:flex-row lg:flex lg:text-left items-center px-4 lg:px-0 gap-15 lg:gap-0">
-                <div className="w-full text-center lg:text-left lg:w-[70%]">
+            <div className="container  lg:flex-row lg:flex lg:text-left items-center px-4 lg:px-3 xl:px-2 2xl:px-0 gap-15 lg:gap-0">
+                <div className="w-full text-center lg:text-left lg:w-[68%] xl:w-[69%] 2xl:w-[70%]">
 
                     <FadeLeft>
                     <div className="">

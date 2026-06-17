@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <>
         <section className={`bg-[#080b11] fixed z-99 border-b border-[rgba(212,175,55,0.5)] w-full duration-700 transition-all ease-in-out ${isSticky ? ' py-4 bg-[rgba(8,11,17,0.6)]' : 'py-5.5'}`}>
-            <div className="container px-4 lg:px-0">
+            <div className="container px-4 lg:px-3 xl:px-2 2xl:px-0">
                 <div className="flex items-center justify-between">
                     <div className="1 ">
                         <Link href="/" className={`${playfair.className} sm:text-[30px] md:text-[28px] text-[30px] text-[#D4AF37] font-bold`} >ADNAN SAMI</Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="menu hidden md:block">
-                        <ul className='flex md:gap-6 lg:gap-15'>
+                        <ul className='flex md:gap-6 lg:gap-12 xl:gap-15'>
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="/service2">Services</Link></li>
                             <li><Link href="/about2">About me</Link></li>

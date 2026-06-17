@@ -43,11 +43,11 @@ const playfair = Playfair_Display({
 });
 
 const contents = [
-  { id: 1, image: preview, text1: "Exclusive — Full E-Commerce", text2:"React e-commerce platform with cart system, product filtering & JWT authentication.", t1: "React", t2:"Tailwind", t3:"Redux" },
+  { id: 1, image: preview, text1: "Full E-Commerce Website", text2:"Modern e-commerce platform with seamless shopping and user experience.", t1: "React", t2:"Tailwind", t3:"Redux" },
 
   { id: 2, image: preview2, text1: "Agency Landing Page", text2:"Professional React agency website with responsive design and testimonials.", t1: "React", t2:"Tailwind", t3:"Redux" },
 
-  { id: 3, image: portfolio, text1: "My Portfolio Website", text2:"Modern portfolio website with full responsiveness, smooth animations.", t1: "Next.js", t2:"Tailwind", t3:"Framer Motion" },
+  { id: 3, image: portfolio, text1: "My Portfolio Website", text2:"Modern portfolio website with full responsiveness, smooth animations.", t1: "Next.js", t2:"Tailwind", t3:"Motion" },
 
   { id: 4, image: cruch, text1: "Church Landing Page", text2:"Professional community website with responsive design and pixel perfect ui.", t1: "HTML", t2:"CSS", t3:"Responsive" },
 
@@ -65,7 +65,7 @@ const contents = [
 ]
 
 const contents2 = [
-  { id: 1, image: preview, text1: "Exclusive — Full E-Commerce", text2:"React e-commerce platform with cart system, product filtering & JWT authentication.", t1: "React", t2:"Tailwind CSS", t3:"Redux" },
+  { id: 1, image: preview, text1: "Full E-Commerce Website", text2:"Modern e-commerce platform with seamless shopping and user experience.", t1: "React", t2:"Tailwind CSS", t3:"Redux" },
 
   { id: 2, image: preview2, text1: "Agency Landing Page", text2:"Professional React agency website with responsive design and testimonials.", t1: "React", t2:"Tailwind CSS", t3:"Redux" },
 
@@ -80,7 +80,7 @@ const contents3 = [
 ]
 
 const contents4 = [
-  { id: 1, image: preview, text1: "Exclusive — Full E-Commerce", text2:"React e-commerce platform with cart system, product filtering & JWT authentication.", t1: "React", t2:"Tailwind CSS", t3:"Redux" },
+  { id: 1, image: preview, text1: "Full E-Commerce Website", text2:"Modern e-commerce platform with seamless shopping and user experience", t1: "React", t2:"Tailwind CSS", t3:"Redux" },
 
   { id: 2, image: preview2, text1: "Agency Landing Page", text2:"Professional React agency website with responsive design and testimonials.", t1: "React", t2:"Tailwind CSS", t3:"Redux" },
 
@@ -104,7 +104,7 @@ const contents5 = [
 
 const contents6 = [
   
-  { id: 1, image: portfolio, text1: "My Portfolio Website", text2:"Modern portfolio website with full responsiveness, smooth animations, and all latest technologies.", t1: "Next.js", t2:"Tailwind CSS", t3:"Framer Motion" },
+  { id: 1, image: portfolio, text1: "My Portfolio Website", text2:"Modern portfolio website with full responsiveness, smooth animations.", t1: "Next.js", t2:"Tailwind CSS", t3:"Motion" },
 
 
 ]
@@ -113,7 +113,7 @@ const Portfolio = () => {
   return (
     <>
         <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-10 md:pt-20 pb-20 md:pb-37.5'>
-            <div className="container px-4 lg:px-0">
+            <div className="container px-4 lg:px-3 xl:px-2 2xl:px-0">
               <Fadeup>
                 <div className="headline flex flex-col justify-center items-center">
                     <h4 className={`${cormorant.className} text-[20px] font-bold leading-[100%] text-[#D4AF37]`}>My Work</h4>
@@ -177,13 +177,13 @@ const Portfolio = () => {
 
                             </div>
                               <div className="valus group bg-[#111118] px-3 rounded-b-xl">
-                              <h3 className={`text-[#FFFFFF] text-[18px] md:text-[20px] lg:text-[24px] ${playfair.className} font-bold pt-2`}>{content.text1}</h3>
-                              <p className={`text-[#9A9A9A] text-[16px] lg:text-[18px] ${cormorant.className} font-medium pb-3.5 pt-2 h-20`}>{content.text2}</p>
+                              <h3 className={`text-[#FFFFFF] text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] ${playfair.className} font-bold pt-2`}>{content.text1}</h3>
+                              <p className={`text-[#9A9A9A] text-[16px] xl:text-[18px] ${cormorant.className} font-medium pb-3.5 pt-2 h-20`}>{content.text2}</p>
                               <div className="teq pb-3.5">
                               <ul className='flex md:gap-2 lg:gap-5'>
-                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>{content.t1}</a></li>
-                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>{content.t2}</a></li>
-                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px] invisible md:visible`}>{content.t3}</a></li>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] lg:text-[14px] xl:text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>{content.t1}</a></li>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] lg:text-[14px] xl:text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>{content.t2}</a></li>
+                              <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] lg:text-[14px] xl:text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px] invisible md:visible`}>{content.t3}</a></li>
 
                               </ul>
                               </div>
