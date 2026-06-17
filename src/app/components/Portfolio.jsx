@@ -180,7 +180,7 @@ const Portfolio = () => {
                               <h3 className={`text-[#FFFFFF] text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] ${playfair.className} font-bold pt-2`}>{content.text1}</h3>
                               <p className={`text-[#9A9A9A] text-[16px] xl:text-[18px] ${cormorant.className} font-medium pb-3.5 pt-2 h-20`}>{content.text2}</p>
                               <div className="teq pb-3.5">
-                              <ul className='flex md:gap-2 lg:gap-5'>
+                              <ul className='flex gap-4 md:gap-2 lg:gap-5'>
                               <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] lg:text-[14px] xl:text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>{content.t1}</a></li>
                               <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] lg:text-[14px] xl:text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px]`}>{content.t2}</a></li>
                               <li><a href="#" style={{padding: '4px 8px'}} className={`text-[#9A9A9A] hover:text-[#c9a84c] bg-[#1a1a26] hover-[#c9a84c0f] text-[16px] lg:text-[14px] xl:text-[16px] ${playfair.className} font-semibold border border-[#ffffff28] hover:border-[#c9a84c66] duration-300 rounded-[10px] invisible md:visible`}>{content.t3}</a></li>

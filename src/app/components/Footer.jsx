@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
 
 
-            <div className="3 flex justify-center border-t border-[#2A3A5C] pb-6">
+            <div className="3 flex justify-center text-center border-t border-[#2A3A5C] pb-6">
               <p className='text-[16px] font-bold font-inter text-[#8A9BB8] pt-4'>© 2025 Md Adnan Sami. All Rights Reserved.</p>
             </div>
           </div>
