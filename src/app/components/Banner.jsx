@@ -96,12 +96,12 @@ const Banner = () => {
                         </div>
                         
 
-                        <div className="banner-button flex justify-center lg:justify-start gap-6 pt-10 lg:pt-10 pb-10 lg:pb-20">
+                        <div className="banner-button flex justify-center lg:justify-start gap-3 sm:gap-6 pt-10 lg:pt-10 pb-10 lg:pb-20">
                             <div className="B1">
-                                <Link href="" className='text-[#FFFFFF] border border-[#9A9A9A] py-3 px-10 rounded-[10px] hover:bg-[#F0D080] duration-300 hover:text-[#000000]'>HIRE ME</Link>
+                                <Link href="" className='text-[#FFFFFF] whitespace-nowrap border border-[#9A9A9A] py-3 px-10 rounded-[10px] hover:bg-[#F0D080] duration-300 hover:text-[#000000]'>HIRE ME</Link>
                             </div>
                             <div className="B2">
-                                <Link href="https://drive.google.com/drive/u/3/folders/1H5rfdU2C2ci7zSOj8csgnNrDAkGKNV1y" className='text-[#FFFFFF] border border-[#9A9A9A] py-3 px-10 rounded-[10px] hover:bg-[#F0D080] duration-300 hover:text-[#000000]'>DOWNLOAD CV</Link>
+                                <Link href="https://drive.google.com/drive/u/3/folders/1H5rfdU2C2ci7zSOj8csgnNrDAkGKNV1y" className='text-[#FFFFFF] border border-[#9A9A9A] whitespace-nowrap py-3 px-10 rounded-[10px] hover:bg-[#F0D080] duration-300 hover:text-[#000000]'>DOWNLOAD CV</Link>
                             </div>
                         </div>
 
