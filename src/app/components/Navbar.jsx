@@ -45,8 +45,8 @@ const Navbar = () => {
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="/service2">Services</Link></li>
                             <li><Link href="/about2">About me</Link></li>
-                            <li><Link href="">Portfolio</Link></li>
-                            <li><Link href="">Contact me</Link></li>
+                            <li><Link href="/portfolio2">Portfolio</Link></li>
+                            <li><Link href="/contact2">Contact me</Link></li>
                         </ul>
                     </div>
 
@@ -56,16 +56,16 @@ const Navbar = () => {
                             <IoMdClose  className='text-[40px] text-[#8A9BB8] font-bold hover:text-red-500 duration-500'/>
                         </div>
                         
-                        <Link className='text-[20px] font-inter text-[#8A9BB8] font-normal hover:text-[#D4AF37] duration-300 select-none' href="/">Home</Link>
-                        <Link className='text-[20px] font-inter text-[#8A9BB8] font-normal hover:text-[#D4AF37] duration-300 select-none' href="/service2">Services</Link>
-                        <Link className='text-[20px] font-inter text-[#8A9BB8] font-normal hover:text-[#D4AF37] duration-300 select-none' href="">About me</Link>
-                        <Link className='text-[20px] font-inter text-[#8A9BB8] font-normal hover:text-[#D4AF37] duration-300 select-none' href="">Portfolio</Link>
-                        <Link className='text-[20px] font-inter text-[#8A9BB8] font-normal hover:text-[#D4AF37] duration-300 select-none' href="">Contact me</Link>
+                        <Link className='text-[20px] font-inter text-[#8A9BB8] font-normal hover:text-[#D4AF37] duration-300 select-none' onClick={()=> setMenu(false)} href="/">Home</Link>
+                        <Link className='text-[20px] font-inter text-[#8A9BB8] font-normal hover:text-[#D4AF37] duration-300 select-none' onClick={()=> setMenu(false)} href="/service2">Services</Link>
+                        <Link className='text-[20px] font-inter text-[#8A9BB8] font-normal hover:text-[#D4AF37] duration-300 select-none' onClick={()=> setMenu(false)} href="/about2">About me</Link>
+                        <Link className='text-[20px] font-inter text-[#8A9BB8] font-normal hover:text-[#D4AF37] duration-300 select-none' onClick={()=> setMenu(false)} href="/portfolio2">Portfolio</Link>
+                        <Link className='text-[20px] font-inter text-[#8A9BB8] font-normal hover:text-[#D4AF37] duration-300 select-none' onClick={()=> setMenu(false)} href="/contact2">Contact me</Link>
                         
                     </div>
 
                     <div className="button hidden lg:block">
-                        <a className={`${playfair.className} text-[16px] text-[#FFFFFF] font-bold py-3 px-10 border-2 border-[#2A3A5C] rounded-lg hover:bg-[#D4AF37] hover:border-[#D4AF37] duration-500`} href="">Hire Me</a>
+                        <Link href="/contact2" className='text-[#FFFFFF] whitespace-nowrap border border-[#9A9A9A] py-3 px-10 rounded-[10px] hover:bg-[#F0D080] duration-300 hover:text-[#000000]'>HIRE ME</Link>
                     </div>
                 </div>
             </div>

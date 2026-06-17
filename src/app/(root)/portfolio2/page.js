@@ -1,16 +1,16 @@
 "use client"
 import { Cormorant_Garamond, DM_Sans, Playfair_Display } from 'next/font/google';
 import React from 'react'
-import preview from '../../../public/images/preview.png'
-import preview2 from '../../../public/images/preview2.png'
-import portfolio from '../../../public/images/portfolio.png'
-import cruch from '../../../public/images/cruch.png'
-import creative from '../../../public/images/creative.png'
-import nexcent from '../../../public/images/nexcent.png'
-import agency from '../../../public/images/agency.png'
-import service from '../../../public/images/service.png'
-import basic from '../../../public/images/basic.png'
-import fashion from '../../../public/images/fashion.png'
+import preview from '../../../../public/images/preview.png'
+import preview2 from '../../../../public/images/preview2.png'
+import portfolio from '../../../../public/images/portfolio.png'
+import cruch from '../../../../public/images/cruch.png'
+import creative from '../../../../public/images/creative.png'
+import nexcent from '../../../../public/images/nexcent.png'
+import agency from '../../../../public/images/agency.png'
+import service from '../../../../public/images/service.png'
+import basic from '../../../../public/images/basic.png'
+import fashion from '../../../../public/images/fashion.png'
 import Image from 'next/image';
 import { FaGithub } from "react-icons/fa";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
@@ -23,8 +23,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { image } from 'framer-motion/client';
-import Fadeup from './Fadeup';
-import { github } from 'thesvg';
+import Fadeup from '@/app/components/Fadeup';
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -44,25 +43,24 @@ const playfair = Playfair_Display({
 });
 
 const contents = [
-  { id: 1, image: preview, text1: "Full E-Commerce Website", text2:"Modern e-commerce platform with seamless shopping and user experience.", t1: "React", t2:"Tailwind", t3:"Redux", github:"https://github.com/WEB-ADNAN/Full-E-Commerce-Website" },
+  { id: 1, image: preview, text1: "Full E-Commerce Website", text2:"Modern e-commerce platform with seamless shopping and user experience.", t1: "React", t2:"Tailwind", t3:"Redux" },
 
-  { id: 2, image: preview2, text1: "Agency Landing Page", text2:"Professional React agency website with responsive design and testimonials.", t1: "React", t2:"Tailwind", t3:"Redux", live: "https://react-project-1-zaqj.vercel.app/", github: "https://github.com/WEB-ADNAN/React-project-Design-File-Agence-" },
+  { id: 2, image: preview2, text1: "Agency Landing Page", text2:"Professional React agency website with responsive design and testimonials.", t1: "React", t2:"Tailwind", t3:"Redux" },
 
-  { id: 3, image: portfolio, text1: "My Portfolio Website", text2:"Modern portfolio website with full responsiveness, smooth animations.", t1: "Next.js", t2:"Tailwind", t3:"Motion", live: "https://my-portfolio-website-rose-phi.vercel.app/" },
+  { id: 3, image: portfolio, text1: "My Portfolio Website", text2:"Modern portfolio website with full responsiveness, smooth animations.", t1: "Next.js", t2:"Tailwind", t3:"Motion" },
 
-  { id: 4, image: cruch, text1: "Church Landing Page", text2:"Professional community website with responsive design and pixel perfect ui.", t1: "HTML", t2:"CSS", t3:"Responsive", live: "https://church-new-temp.vercel.app/", github: "https://github.com/WEB-ADNAN/Church-New-temp" },
+  { id: 4, image: cruch, text1: "Church Landing Page", text2:"Professional community website with responsive design and pixel perfect ui.", t1: "HTML", t2:"CSS", t3:"Responsive" },
 
-  { id: 5, image: creative, text1: "Creative Skill Website", text2:"Creative skill platform showcasing modern learning and development solutions.", t1: "Tailwind", t2:"JavaScript", t3:"Responsive", github: "https://github.com/WEB-ADNAN/Creative-Skill-Website" },
+  { id: 5, image: creative, text1: "Creative Skill Website", text2:"Creative skill platform showcasing modern learning and development solutions.", t1: "Tailwind", t2:"JavaScript", t3:"Responsive" },
 
-  { id: 6, image: nexcent, text1: "Nexcent Landing Page", text2:"A service-based platform helping clients find experts across different skills.", t1: "HTML", t2:"Tailwind", t3:"Responsive", github: "https://github.com/WEB-ADNAN/Nexcent-Landing-Page" },
+  { id: 6, image: nexcent, text1: "Nexcent Landing Page", text2:"A service-based platform helping clients find experts across different skills.", t1: "HTML", t2:"Tailwind", t3:"Responsive" },
 
-  { id: 7, image: agency, text1: "Creative Agency", text2:"Creative agency delivering modern digital solutions with innovative design.", t1: "HTML", t2:"CSS", t3:"Bootstrap", github: "https://github.com/WEB-ADNAN/Creative-Agency-Landing-page" },
+  { id: 7, image: agency, text1: "Creative Agency", text2:"Creative agency delivering modern digital solutions with innovative design.", t1: "HTML", t2:"CSS", t3:"Bootstrap" },
 
-  { id: 8, image: service, text1: "Service Landing Page", text2:"A food service landing page with Bootstrap and clean design.", t1: "HTML", t2:"CSS", t3:"Bootstrap", github: "https://github.com/WEB-ADNAN/Quriarbox-Courier-Service-Website-Temp" },
+  { id: 8, image: service, text1: "Service Landing Page", text2:"A food service landing page with Bootstrap and clean design.", t1: "HTML", t2:"CSS", t3:"Bootstrap" },
 
-  { id: 9, image: basic, text1: "Basic Portfolio Temp.", text2:"A basic protfolio website with row HTML and CSS with pixel perfect ui", t1: "HTML", t2:"CSS", t3:"Pixel Perfect Ui", github: "https://github.com/WEB-ADNAN/basic-temp" },
-
-  { id: 10, image: fashion, text1: "Fashion Website", text2:"A stylish fashion landing page with clean and modern layout.", t1: "HTML", t2:"CSS", t3:"Pixel Perfect Ui", github: "https://github.com/WEB-ADNAN/Fashion-website-ui" },
+  { id: 9, image: basic, text1: "Basic Portfolio Temp.", text2:"A basic protfolio website with row HTML and CSS with pixel perfect ui", t1: "HTML", t2:"CSS", t3:"Pixel Perfect Ui" },
+  { id: 10, image: fashion, text1: "Fashion Website", text2:"A stylish fashion landing page with clean and modern layout.", t1: "HTML", t2:"CSS", t3:"Pixel Perfect Ui" },
 
 ]
 
@@ -86,7 +84,7 @@ const contents4 = [
 
   { id: 2, image: preview2, text1: "Agency Landing Page", text2:"Professional React agency website with responsive design and testimonials.", t1: "React", t2:"Tailwind CSS", t3:"Redux" },
 
-  { id: 3, image: portfolio, text1: "My Portfolio Website", text2:"Modern portfolio website with full responsiveness, smooth animations, and all latest technologies.", t1: "Next.js", t2:"Tailwind CSS", t3:"Framer Motion", live: "https://my-portfolio-website-rose-phi.vercel.app/" },
+  { id: 3, image: portfolio, text1: "My Portfolio Website", text2:"Modern portfolio website with full responsiveness, smooth animations, and all latest technologies.", t1: "Next.js", t2:"Tailwind CSS", t3:"Framer Motion" },
 
   { id: 4, image: creative, text1: "Creative Skill Website", text2:"Creative skill platform showcasing modern learning and development solutions.", t1: "Tailwind CSS", t2:"JavaScript", t3:"Responsive" },
 
@@ -106,7 +104,7 @@ const contents5 = [
 
 const contents6 = [
   
-  { id: 1, image: portfolio, text1: "My Portfolio Website", text2:"Modern portfolio website with full responsiveness, smooth animations.", t1: "Next.js", t2:"Tailwind CSS", t3:"Motion", live: "https://my-portfolio-website-rose-phi.vercel.app/" },
+  { id: 1, image: portfolio, text1: "My Portfolio Website", text2:"Modern portfolio website with full responsiveness, smooth animations.", t1: "Next.js", t2:"Tailwind CSS", t3:"Motion" },
 
 
 ]
@@ -114,7 +112,7 @@ const contents6 = [
 const Portfolio = () => {
   return (
     <>
-        <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-10 md:pt-20 pb-20 md:pb-37.5'>
+        <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-32 md:pt-32 pb-20 md:pb-30'>
             <div className="container px-4 lg:px-3 xl:px-2 2xl:px-0">
               <Fadeup>
                 <div className="headline flex flex-col justify-center items-center">
@@ -190,8 +188,8 @@ const Portfolio = () => {
                               </ul>
                               </div>
                               <div className="flex gap-5 pt-2.5 border-t border-[#ffffff28] pb-2.5">
-                              <a href={content.live} target='_blank' className='text-[#c9a84c] border border-[#c9a84c66] py-2 px-3 rounded-[10px] bg-[#c9a84c22] duration-300 flex items-center gap-2'><LuSquareArrowOutUpRight/> Live Demo</a>
-                              <a href={content.github} target='_blank' className='text-[#e8e8f0] border border-[#ffffff3a] py-2 px-3 rounded-[10px] bg-transparent duration-300 hover:bg-[#212148dc] flex items-center gap-2'><FaGithub/> GitHub</a>
+                              <a href="" className='text-[#c9a84c] border border-[#c9a84c66] py-2 px-3 rounded-[10px] bg-[#c9a84c22] duration-300 flex items-center gap-2'><LuSquareArrowOutUpRight/> Live Demo</a>
+                              <a href="" className='text-[#e8e8f0] border border-[#ffffff3a] py-2 px-3 rounded-[10px] bg-transparent duration-300 hover:bg-[#212148dc] flex items-center gap-2'><FaGithub/> GitHub</a>
                               </div>
                             </div>
                               </div>

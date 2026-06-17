@@ -34,7 +34,7 @@ const skills = [
 const About = () => {
   return (
     <>
-        <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-10 pb-20 md:pt-30 md:pb-37.5'>
+        <section className='bg-[#080b11] border-t border-[rgba(212,175,55,0.5)] pt-32 pb-20 md:pt-30 md:pb-37.5'>
             <div className="container px-4 md:px-0">
                 <Fadeup>
                 <div className="headline flex flex-col justify-center items-center">

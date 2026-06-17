@@ -5,6 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import Fadeup from './FadeLeft';
 import FadeLeft from './FadeLeft';
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -154,7 +155,7 @@ const FAQ = () => {
                         </div>
 
                         <div className="mt-5 md:mt-0">
-                          <a className='text-[#000000] bg-[#D4AF37] py-2 md:py-3 px-8 md:px-10 rounded-[10px] hover:bg-[#f0cd5a] duration-300 hover:text-[#000000]' href="">CONTACT ME</a>
+                          <Link className='text-[#000000] bg-[#D4AF37] py-2 md:py-3 px-8 md:px-10 rounded-[10px] hover:bg-[#f0cd5a] duration-300 hover:text-[#000000]' href="/contact2">CONTACT ME</Link>
                         </div>
                        
                     </div>
