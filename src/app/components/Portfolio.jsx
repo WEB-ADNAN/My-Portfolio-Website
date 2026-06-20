@@ -25,6 +25,8 @@ import "swiper/css/pagination";
 import { image } from 'framer-motion/client';
 import Fadeup from './Fadeup';
 import { github } from 'thesvg';
+import { GrNext } from "react-icons/gr";
+import { GrPrevious } from "react-icons/gr";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -150,24 +152,35 @@ const Portfolio = () => {
                       </div>
                     </TabList>
 
-
+                    <div className="pagination-btn flex gap-6 pt-12">
+                        <button className='prev text-[#D4AF37] text-[30px] bg-[rgba(255,255,255,0.08)] px-4 py-3 font-bold rounded-lg cursor-pointer'><GrPrevious /></button>
+                        <button className='next text-[#D4AF37] text-[30px] bg-[rgba(255,255,255,0.08)] px-4 py-3 font-bold rounded-lg cursor-pointer'><GrNext /></button>
+                      </div> 
                     <TabPanel>
-                      <div className="pt-15 ">
-                        {/* Navigation, Pagination, */}
+                      <div className="pt-8 ">
                         <Swiper
-                          modules={[Autoplay]}
+                          modules={[Navigation, Pagination, Autoplay]}
                           spaceBetween={30}
                           slidesPerView={3}
+                          navigation={{
+                            nextEl:".next",
+                            prevEl: ".prev"
+                          }}
+                          pagination={{ 
+                            clickable: true
+                           }}
                           breakpoints={{
                             0:    { slidesPerView: 1 },
                             640:  { slidesPerView: 1 },
                             768:  { slidesPerView: 2 },
                             1024: { slidesPerView: 3 },
                           }}
-                          speed={1500}
-                          autoplay={{ delay: 3000 }}
+                          speed={1300}
+                          autoplay={{ delay: 2200 }}
                           loop={true}
                         >
+
+                         
                       {
                         contents.map(content=>(
                             <SwiperSlide>
@@ -199,7 +212,7 @@ const Portfolio = () => {
                             </SwiperSlide>
                         ))
                       }
-                        
+   
       
                       </Swiper>
                       </div>

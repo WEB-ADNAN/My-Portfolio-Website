@@ -24,6 +24,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { image } from 'framer-motion/client';
 import Fadeup from '@/app/components/Fadeup';
+import { GrPrevious, GrNext } from 'react-icons/gr';
+
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -148,14 +150,24 @@ const Portfolio = () => {
                       </div>
                     </TabList>
 
-
+                    <div className="pagination-btn flex gap-6 pt-12">
+                        <button className='prev text-[#D4AF37] text-[30px] bg-[rgba(255,255,255,0.08)] px-4 py-3 font-bold rounded-lg cursor-pointer'><GrPrevious /></button>
+                        <button className='next text-[#D4AF37] text-[30px] bg-[rgba(255,255,255,0.08)] px-4 py-3 font-bold rounded-lg cursor-pointer'><GrNext /></button>
+                      </div> 
                     <TabPanel>
                       <div className="pt-15 ">
                         {/* Navigation, Pagination, */}
                         <Swiper
-                          modules={[Autoplay]}
+                          modules={[Navigation, Pagination, Autoplay]}
                           spaceBetween={30}
                           slidesPerView={3}
+                          navigation={{
+                            nextEl:".next",
+                            prevEl: ".prev"
+                          }}
+                          pagination={{ 
+                            clickable: true
+                           }}
                           breakpoints={{
                             0:    { slidesPerView: 1 },
                             640:  { slidesPerView: 1 },
