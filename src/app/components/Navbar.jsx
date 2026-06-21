@@ -23,8 +23,9 @@ const Navbar = () => {
             setIsSticky(window.scrollY > 0)
         }
         window.addEventListener('scroll', scrollHandle)
-        return ()=> window.addEventListener('scroll', scrollHandle)
-    })
+        return ()=> window.removeEventListener('scroll', scrollHandle)
+        
+    }, [])
 
     const [menu, setMenu] = useState(false)
 
