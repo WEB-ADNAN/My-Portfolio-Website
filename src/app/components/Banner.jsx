@@ -12,6 +12,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
+import banner2 from '../../../public/images/banner2.jpg'
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -34,7 +35,7 @@ const playfair = Playfair_Display({
 const Banner = () => {
   return (
     <>
-        <section className="relative bg-[#0a0d14] overflow-hidden pt-35 pb-30 md:pt-47.5 md:pb-37.5">
+        <section className="relative bg-[#0a0d14] overflow-hidden pt-35 pb-30 md:pt-40 md:pb-37.5">
 
             <div className="absolute -top-20 -right-16 w-105 h-105 rounded-full pointer-events-none z-0
                 bg-[radial-gradient(circle,rgba(212,175,55,0.13)_0%,transparent_70%)]
@@ -153,7 +154,7 @@ const Banner = () => {
                     <div className="absolute inset-0 bg-linear-to-b from-transparent to-[rgba(10,13,20,0.45)] z-10" />
 
                     <Image
-                    src={adnan}
+                    src={banner2}
                     alt="adnan"
                     fill
                     className="object-cover object-top z-0"
